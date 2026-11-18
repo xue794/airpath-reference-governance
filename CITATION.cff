@@ -3,7 +3,7 @@ message: "If you use these computational materials, please cite this version and
 type: software
 repository-code: "https://github.com/xue794/airpath-reference-governance"
 title: "Air-Path Reference Governance for Fixed-Wing Tracking under Wind"
-version: "1.0.0"
+version: "1.1.0"
 license:
   - MIT
   - CC-BY-4.0
@@ -19,11 +19,11 @@ authors:
     given-names: "Xue"
 abstract: >-
   Computational materials accompanying the manuscript of the same title.
-  The archive includes fixed-wing reference-governor data, frozen source and
-  inputs, saved-output reconstruction checks, and an isolated MATLAB entry
-  for the representative C1 Direct case. Verification covers selected saved
-  summaries and one MATLAB reintegration, rather than an end-to-end rerun of
-  every study or interval proof.
+  The v1.1.0 release provides code and data for the endpoint reserve design,
+  wind-direction and recovery experiments, the sampled predictor and QP
+  comparison, and event and uncertainty diagnostics. The release guide
+  documents saved-output checks, MATLAB simulation entries, reserve and
+  interval-tree replay, and archival access to the original v1.0.0 studies.
 keywords:
   - fixed-wing UAV
   - reference governor

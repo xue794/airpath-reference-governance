@@ -1,5 +1,5 @@
 {
-  "version": "v1.0.0",
+  "version": "v1.1.0",
   "files": [
     {
       "file": ".gitattributes",
@@ -18,13 +18,13 @@
     },
     {
       "file": "CHANGELOG.md",
-      "bytes": 2174,
-      "sha256": "8d7ab11fdf54def98b4ccc5eace44cdb91e10df38b7458d1819fddc26ca26c19"
+      "bytes": 2665,
+      "sha256": "68152fb62c4bd03e338b2458bbee5201925640e8f3622a90820ba57e43118156"
     },
     {
       "file": "CITATION.cff",
-      "bytes": 1209,
-      "sha256": "447ae242d037887542f5f785141617fea4b27faa3202eb9f5de08e1acad77d58"
+      "bytes": 1239,
+      "sha256": "5ea1a394bec320e24db1dcfa11e56d5b9064a166de5b7a9d289716f550f94d9d"
     },
     {
       "file": "data/direct_traces/C1_Direct_005.csv",
@@ -873,13 +873,18 @@
     },
     {
       "file": "docs/RELEASE_CHECKLIST.md",
-      "bytes": 1962,
-      "sha256": "53f84a3871ac63fe1354c20519eedc8e02508177068ec174a506f69dbf6183aa"
+      "bytes": 1981,
+      "sha256": "fff5f39c27e88e46304c671f30f75e09865844ab61b877bf4f77c5b8ac8f44e3"
     },
     {
       "file": "docs/REPRODUCIBILITY.md",
-      "bytes": 7540,
-      "sha256": "a95dfa0296d8d7298f1789c9068f594aa5147ae8fb452d6a1a37d8737896382b"
+      "bytes": 7538,
+      "sha256": "36742cbe43860c108250ceddbb52a24612fccc58294ba122fe41968ad8c35bdc"
+    },
+    {
+      "file": "docs/REVISED_STUDY.md",
+      "bytes": 2553,
+      "sha256": "ed7ab9d5b42c5e753e7cf9716d760ac8126b9056512e592f71d78542d39ed3dd"
     },
     {
       "file": "LICENSE",
@@ -938,8 +943,8 @@
     },
     {
       "file": "README.md",
-      "bytes": 6926,
-      "sha256": "7341eaa85a75d3cfe8576fa9e50f09514263dc90d94f72f0ae99ca61bc2374ee"
+      "bytes": 8066,
+      "sha256": "05c23a96ac36fd2b0d7bd79e94928f73deab0fb7563758e8d3d3eee11090356e"
     },
     {
       "file": "README.txt",
@@ -948,8 +953,8 @@
     },
     {
       "file": "scripts/update_manifest.py",
-      "bytes": 1498,
-      "sha256": "e7e15594f4688bb6cc0d03d9784006828afbc0773fb88a746c4f57b8c6816c53"
+      "bytes": 1789,
+      "sha256": "16e7256887d6a48ed9affeda49693078dc09f81086b00fb6ed974c1730312a13"
     },
     {
       "file": "scripts/verify_release.py",

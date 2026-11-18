@@ -2,9 +2,15 @@
 
 Repository: [https://github.com/xue794/airpath-reference-governance](https://github.com/xue794/airpath-reference-governance)
 
-Computational materials accompanying the manuscript by **Tianming Ren, Ou Li, Guo Jiang and Xue Zhong**. Version **v1.0.0**, dated **18 November 2026**.
+Computational materials accompanying the manuscript by **Tianming Ren, Ou Li, Guo Jiang and Xue Zhong**. The **v1.1.0** release adds the experiments and reserve calculations in the revised manuscript.
 
 The study constructs reference constraints for coupled lift–thrust inversion, quantifies how downstream feedback consumes the reference force reserve, and evaluates reference selection and prescribed deceleration schedules. This repository connects the reported quantities to archived data, frozen scientific source and executable checks.
+
+## Revised manuscript materials
+
+Download `Extension_Data_and_Code.zip` from the [v1.1.0 release](https://github.com/xue794/airpath-reference-governance/releases/tag/v1.1.0), extract it, and run `python check_extension.py` from the extracted directory. The archive contains the reserve design, wind and recovery simulations, sampled predictor and QP comparisons, and event and uncertainty diagnostics. The [revised manuscript evidence guide](docs/REVISED_STUDY.md) maps the new figure and table numbers to the supporting records and gives the commands for additional verification.
+
+The [v1.0.0 release](https://github.com/xue794/airpath-reference-governance/releases/tag/v1.0.0) identifies the original computational materials. The sections below describe how to check those results.
 
 ## Start with the saved-output checks
 
@@ -24,7 +30,7 @@ For the commands, interpretation and optional MATLAB run, read [Reproducibility 
 
 | Location | Purpose |
 | --- | --- |
-| [MAIN_AND_SUPPLEMENT_MAP.csv](MAIN_AND_SUPPLEMENT_MAP.csv) | 43 entries linking the main and supplementary figures and tables to their supporting records and verification scope. |
+| [MAIN_AND_SUPPLEMENT_MAP.csv](MAIN_AND_SUPPLEMENT_MAP.csv) | 43 entries linking the v1.0.0 figure and table numbers to their supporting records and verification scope. |
 | [DATA_DICTIONARY.txt](DATA_DICTIONARY.txt) | Method names, units, time windows, missing values and comparison conventions. |
 | [data/](data/) | Archived outcomes, saved trajectories, event records, numerical certificates and the focused S11 archive. |
 | [source/](source/) | Original scientific modules, frozen inputs and source snapshots in their retained relative layout. |
@@ -62,5 +68,7 @@ Author and version metadata are provided in [CITATION.cff](CITATION.cff). The ac
 Study-authored code is licensed under [MIT](LICENSE). Study-authored data and standalone documentation are licensed under [CC BY 4.0](LICENSES/CC-BY-4.0.txt). See [LICENSING.md](LICENSING.md) for the scope of each license. Third-party components retain their original terms, including the BSD 3-Clause license for mpmath; see [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md). The original provenance records are retained with the scientific files.
 
 ## 中文导航
+
+修订稿新增实验和力裕量计算见 [v1.1.0](https://github.com/xue794/airpath-reference-governance/releases/tag/v1.1.0)。解压 `Extension_Data_and_Code.zip` 后运行 `python check_extension.py`。新版图号、数据文件和可选复算命令见[修订稿复现指南](docs/REVISED_STUDY.md)。
 
 这是论文的计算资料与核查入口。先在仓库根目录运行 `python scripts/verify_release.py`，再用 [43项图表索引](MAIN_AND_SUPPLEMENT_MAP.csv) 查找论文结果对应的文件。[复现说明](docs/REPRODUCIBILITY.md) 区分“从存档输出复算指标”和“重新运行MATLAB仿真”：本版已核查1,101项数值比较，并重跑一条C1 Direct案例；不声称全研究已经一键复现。原始源文件、冻结输入和旧说明均保留。

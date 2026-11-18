@@ -1,5 +1,11 @@
 # Changelog
 
+## v1.1.0 — 2026-11-18
+
+- Published the revised manuscript's reserve bounds, two wind-direction and recovery experiments, sampled finite-horizon predictor and QP comparison, and event and uncertainty diagnostics in `Extension_Data_and_Code.zip`.
+- Added the revised figure and table crosswalk and instructions for checking the archived results.
+- Provided the original `Computational_Materials.zip` with the archive layout required to replay the four accepted S11.2 interval trees.
+
 ## v1.0.0 — 2026-11-18
 
 Initial repository packaging of the computational materials for *Air-Path Reference Governance for Fixed-Wing Tracking under Wind*.

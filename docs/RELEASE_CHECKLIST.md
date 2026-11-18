@@ -24,7 +24,7 @@ procedure and the steps to use for a later release.
    for validating a scientific change. Preserve the frozen archive when
    developing another study.
 5. Commit the updated metadata and manifest, then create the GitHub release
-   with tag `v1.0.0` and the description in `CHANGELOG.md`. If files have changed
+   with the tag matching `CITATION.cff` and the description in `CHANGELOG.md`. If files have changed
    since the supplied ZIP was prepared, use a fresh archive of that commit;
    do not label the old ZIP as containing the new metadata.
 6. Use the actual repository URL in the manuscript's Data Availability

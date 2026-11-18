@@ -73,7 +73,7 @@ Use these records for different questions:
 | --- | --- |
 | [MAIN_AND_SUPPLEMENT_MAP.csv](../MAIN_AND_SUPPLEMENT_MAP.csv) | Which saved records support a figure or table, and what has been recomputed? |
 | [SOURCE_MANIFEST.json](../SOURCE_MANIFEST.json) | Where did a copied archive file originate, and what is its SHA256 hash? |
-| [RELEASE_MANIFEST.json](../RELEASE_MANIFEST.json) | Does a current v1.0.0 release file match its recorded bytes, including added documentation, tooling and licensing files? |
+| [RELEASE_MANIFEST.json](../RELEASE_MANIFEST.json) | Does the current repository file match its recorded bytes, including added documentation, tooling and licensing files? |
 | [Original archive manifest](../validation/original_v6/RELEASE_MANIFEST.json) | What file identities were recorded for the original v6 computational archive? |
 | [validation/](../validation/) | Which identity, saved-output and representative reintegration checks were recorded? |
 
