@@ -1,0 +1,111 @@
+{
+  "configurations": {
+    "B1E1": {
+      "saved": 2401,
+      "completed": true,
+      "last_saved_s": 120.0,
+      "grid_rms_m": 8.40750993669602,
+      "peak_full_m": 15.3805635593651,
+      "outside_KB": 0,
+      "max_VB_over_rho": 1.00000000000018,
+      "reference_thrust_violations": 0,
+      "reference_T_min_N": 7.53048781206566,
+      "min_ref_reserved_endpoint_N": 116.316450877581,
+      "endpoint_reserve_violations": 0,
+      "feedback_bracket_raw_thrust_or_projection_violations": 0,
+      "actuator_box_or_rate_violations": 0,
+      "max_kkt": 1.66825825022063e-16,
+      "max_row_violation": 2.26305202470396e-16,
+      "error_id": ""
+    },
+    "B1E0": {
+      "saved": 2401,
+      "completed": true,
+      "last_saved_s": 120.0,
+      "grid_rms_m": 8.40750993669602,
+      "peak_full_m": 15.3805635593651,
+      "outside_KB": 0,
+      "max_VB_over_rho": 1.00000000000018,
+      "reference_thrust_violations": 0,
+      "reference_T_min_N": 7.53048781206566,
+      "min_ref_reserved_endpoint_N": 116.316450877581,
+      "endpoint_reserve_violations": 0,
+      "feedback_bracket_raw_thrust_or_projection_violations": 0,
+      "actuator_box_or_rate_violations": 0,
+      "max_kkt": 1.66825825022063e-16,
+      "max_row_violation": 2.26305202470396e-16,
+      "error_id": ""
+    },
+    "B0E1": {
+      "saved": 2401,
+      "completed": true,
+      "last_saved_s": 120.0,
+      "grid_rms_m": 2.447216641951412,
+      "peak_full_m": 3.69254889622305,
+      "outside_KB": 2339,
+      "max_VB_over_rho": 21.0040163213692,
+      "reference_thrust_violations": 0,
+      "reference_T_min_N": 3.00348155253385,
+      "min_ref_reserved_endpoint_N": 81.1406917762593,
+      "endpoint_reserve_violations": 0,
+      "feedback_bracket_raw_thrust_or_projection_violations": 0,
+      "actuator_box_or_rate_violations": 0,
+      "max_kkt": 4.21324250916848e-17,
+      "max_row_violation": 1.99394942822755e-15,
+      "error_id": ""
+    },
+    "B0E0": {
+      "saved": 2401,
+      "completed": true,
+      "last_saved_s": 120.0,
+      "grid_rms_m": 2.447216641951412,
+      "peak_full_m": 3.69254889622305,
+      "outside_KB": 2339,
+      "max_VB_over_rho": 21.0040163213692,
+      "reference_thrust_violations": 0,
+      "reference_T_min_N": 3.00348155253385,
+      "min_ref_reserved_endpoint_N": 81.1406917762593,
+      "endpoint_reserve_violations": 0,
+      "feedback_bracket_raw_thrust_or_projection_violations": 0,
+      "actuator_box_or_rate_violations": 0,
+      "max_kkt": 4.21324250916848e-17,
+      "max_row_violation": 1.99394942822755e-15,
+      "error_id": ""
+    }
+  },
+  "paired_effects": {
+    "B1E1 minus B1E0": {
+      "shared_samples": 2401,
+      "last_shared_time_s": 120.0,
+      "rms_difference_m": 0.0,
+      "peak_difference_m": 0.0,
+      "max_pointwise_error_m": 0.0,
+      "max_abs_state_coordinate_difference": 0.0
+    },
+    "B0E1 minus B0E0": {
+      "shared_samples": 2401,
+      "last_shared_time_s": 120.0,
+      "rms_difference_m": 0.0,
+      "peak_difference_m": 0.0,
+      "max_pointwise_error_m": 0.0,
+      "max_abs_state_coordinate_difference": 0.0
+    },
+    "B1E1 minus B0E1": {
+      "shared_samples": 2401,
+      "last_shared_time_s": 120.0,
+      "rms_difference_m": 5.9602932947446075,
+      "peak_difference_m": 11.68801466314205,
+      "max_pointwise_error_m": 13.36398680963927,
+      "max_abs_state_coordinate_difference": 32.280892435360784
+    },
+    "B1E0 minus B0E0": {
+      "shared_samples": 2401,
+      "last_shared_time_s": 120.0,
+      "rms_difference_m": 5.9602932947446075,
+      "peak_difference_m": 11.68801466314205,
+      "max_pointwise_error_m": 13.36398680963927,
+      "max_abs_state_coordinate_difference": 32.280892435360784
+    }
+  },
+  "definitions": "RMS = sqrt(mean(error^2)) on saved grid. Set exit uses hB < -1e-8 in native units. Feedback diagnostics here cover the bracket, raw thrust and projection, not a sufficient error-tube calculation."
+}

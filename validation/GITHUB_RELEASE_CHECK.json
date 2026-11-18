@@ -1,0 +1,15 @@
+{
+  "scope": "Local release checks; no GitHub publication or remote CI run.",
+  "original_source_files_byte_identical": 1310,
+  "original_data_files_byte_identical": 167,
+  "release_layer_changes": [
+    "matlab/run_representative_direct.m",
+    "RELEASE_MANIFEST.json"
+  ],
+  "source_manifest_unchanged": true,
+  "citation_cff_schema_1_2_0_valid": true,
+  "ci_definition": "Linux/Windows x Python 3.10/3.14; prepared, not executed remotely",
+  "matlab_result": "validation/GITHUB_MATLAB_REINTEGRATION.json",
+  "matlab_case": "Original C1 Direct only; no additional research case",
+  "license_status": "Author-confirmed MIT for original code; CC BY 4.0 for original data and standalone documentation; third-party terms unchanged."
+}

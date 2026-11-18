@@ -1,0 +1,6 @@
+CaseIndex,CaseName,Count,ScalarActive
+1,hold,61,0
+2,varying,121,118
+3,noisy,121,118
+4,certified_small,61,0
+5,wrap,61,0

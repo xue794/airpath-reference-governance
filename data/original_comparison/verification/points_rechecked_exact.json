@@ -1,0 +1,867 @@
+{
+  "scope": "nominal reference model only",
+  "cases": {
+    "A": {
+      "xi_decimal": [
+        "0.56636307",
+        "0.00239667",
+        "0.23481519",
+        "-0.03591428",
+        "0"
+      ],
+      "VB": {
+        "approximate": [
+          0.1960200007942068,
+          0.19602000079420714
+        ],
+        "lower_scaled_integer": 196020000794206801,
+        "upper_scaled_integer": 196020000794207142,
+        "scale": 1000000000000000000
+      },
+      "Tff": {
+        "approximate": [
+          21.046530261921014,
+          21.046530261923674
+        ],
+        "lower_scaled_integer": 21046530261921012309,
+        "upper_scaled_integer": 21046530261923674725,
+        "scale": 1000000000000000000
+      },
+      "hTmin": {
+        "approximate": [
+          18.046530261921014,
+          18.046530261923674
+        ],
+        "lower_scaled_integer": 18046530261921012309,
+        "upper_scaled_integer": 18046530261923674725,
+        "scale": 1000000000000000000
+      },
+      "phiTmin": {
+        "approximate": [
+          -0.22096812436994787,
+          -0.22096812436580146
+        ],
+        "lower_scaled_integer": -220968124369947860,
+        "upper_scaled_integer": -220968124365801461,
+        "scale": 1000000000000000000
+      },
+      "all_checks": {
+        "hVmin": {
+          "approximate": [
+            8.66636307,
+            8.66636307
+          ],
+          "lower_scaled_integer": 8666363070000000000,
+          "upper_scaled_integer": 8666363070000000000,
+          "scale": 1000000000000000000
+        },
+        "hVmax": {
+          "approximate": [
+            7.33363693,
+            7.33363693
+          ],
+          "lower_scaled_integer": 7333636930000000000,
+          "upper_scaled_integer": 7333636930000000000,
+          "scale": 1000000000000000000
+        },
+        "hGmin": {
+          "approximate": [
+            0.1769295951994329,
+            0.176929595199433
+          ],
+          "lower_scaled_integer": 176929595199432920,
+          "upper_scaled_integer": 176929595199432990,
+          "scale": 1000000000000000000
+        },
+        "hGmax": {
+          "approximate": [
+            0.17213625519943293,
+            0.17213625519943299
+          ],
+          "lower_scaled_integer": 172136255199432920,
+          "upper_scaled_integer": 172136255199432990,
+          "scale": 1000000000000000000
+        },
+        "psiVmin": {
+          "approximate": [
+            10.634450874,
+            10.634450874
+          ],
+          "lower_scaled_integer": 10634450874000000000,
+          "upper_scaled_integer": 10634450874000000000,
+          "scale": 1000000000000000000
+        },
+        "psiVmax": {
+          "approximate": [
+            8.565549126,
+            8.565549126
+          ],
+          "lower_scaled_integer": 8565549126000000000,
+          "upper_scaled_integer": 8565549126000000000,
+          "scale": 1000000000000000000
+        },
+        "psiGmin": {
+          "approximate": [
+            0.1764012342393195,
+            0.17640123423931958
+          ],
+          "lower_scaled_integer": 176401234239319504,
+          "upper_scaled_integer": 176401234239319588,
+          "scale": 1000000000000000000
+        },
+        "psiGmax": {
+          "approximate": [
+            0.2424777862393195,
+            0.2424777862393196
+          ],
+          "lower_scaled_integer": 242477786239319504,
+          "upper_scaled_integer": 242477786239319588,
+          "scale": 1000000000000000000
+        },
+        "hnuVmin": {
+          "approximate": [
+            2.23481519,
+            2.23481519
+          ],
+          "lower_scaled_integer": 2234815190000000000,
+          "upper_scaled_integer": 2234815190000000000,
+          "scale": 1000000000000000000
+        },
+        "hnuVmax": {
+          "approximate": [
+            1.76518481,
+            1.76518481
+          ],
+          "lower_scaled_integer": 1765184810000000000,
+          "upper_scaled_integer": 1765184810000000000,
+          "scale": 1000000000000000000
+        },
+        "hnuGmin": {
+          "approximate": [
+            0.10371206015954633,
+            0.1037120601595464
+          ],
+          "lower_scaled_integer": 103712060159546336,
+          "upper_scaled_integer": 103712060159546392,
+          "scale": 1000000000000000000
+        },
+        "hnuGmax": {
+          "approximate": [
+            0.17554062015954633,
+            0.17554062015954638
+          ],
+          "lower_scaled_integer": 175540620159546336,
+          "upper_scaled_integer": 175540620159546392,
+          "scale": 1000000000000000000
+        },
+        "hnuCmin": {
+          "approximate": [
+            0.2094395102393195,
+            0.2094395102393196
+          ],
+          "lower_scaled_integer": 209439510239319504,
+          "upper_scaled_integer": 209439510239319588,
+          "scale": 1000000000000000000
+        },
+        "hnuCmax": {
+          "approximate": [
+            0.2094395102393195,
+            0.2094395102393196
+          ],
+          "lower_scaled_integer": 209439510239319504,
+          "upper_scaled_integer": 209439510239319588,
+          "scale": 1000000000000000000
+        },
+        "hAG": {
+          "approximate": [
+            4.417947245304216,
+            4.417947245304217
+          ],
+          "lower_scaled_integer": 4417947245304216303,
+          "upper_scaled_integer": 4417947245304216383,
+          "scale": 1000000000000000000
+        },
+        "hMuPlus": {
+          "approximate": [
+            5.894310117413668,
+            5.894310117413679
+          ],
+          "lower_scaled_integer": 5894310117413668054,
+          "upper_scaled_integer": 5894310117413678474,
+          "scale": 1000000000000000000
+        },
+        "hMuMinus": {
+          "approximate": [
+            5.894310117413668,
+            5.894310117413679
+          ],
+          "lower_scaled_integer": 5894310117413668054,
+          "upper_scaled_integer": 5894310117413678474,
+          "scale": 1000000000000000000
+        },
+        "hNminus": {
+          "approximate": [
+            171.63302355637157,
+            171.63302355637222
+          ],
+          "lower_scaled_integer": 171633023556371559701,
+          "upper_scaled_integer": 171633023556372213376,
+          "scale": 1000000000000000000
+        },
+        "hNplus": {
+          "approximate": [
+            174.7997403408131,
+            174.79974034084458
+          ],
+          "lower_scaled_integer": 174799740340813088743,
+          "upper_scaled_integer": 174799740340844576182,
+          "scale": 1000000000000000000
+        },
+        "N_alpha": {
+          "approximate": [
+            1367.5572965962167,
+            2808.475764808861
+          ],
+          "lower_scaled_integer": 1367557296596216728854,
+          "upper_scaled_integer": 2808475764808861282701,
+          "scale": 1000000000000000000
+        },
+        "phiVmin": {
+          "approximate": [
+            12.3745601688,
+            12.3745601688
+          ],
+          "lower_scaled_integer": 12374560168800000000,
+          "upper_scaled_integer": 12374560168800000000,
+          "scale": 1000000000000000000
+        },
+        "phiVmax": {
+          "approximate": [
+            10.6654398312,
+            10.6654398312
+          ],
+          "lower_scaled_integer": 10665439831200000000,
+          "upper_scaled_integer": 10665439831200000000,
+          "scale": 1000000000000000000
+        },
+        "phiGmin": {
+          "approximate": [
+            0.2303540450871834,
+            0.23035404508718352
+          ],
+          "lower_scaled_integer": 230354045087183404,
+          "upper_scaled_integer": 230354045087183506,
+          "scale": 1000000000000000000
+        },
+        "phiGmax": {
+          "approximate": [
+            0.2723007794871834,
+            0.2723007794871835
+          ],
+          "lower_scaled_integer": 272300779487183404,
+          "upper_scaled_integer": 272300779487183506,
+          "scale": 1000000000000000000
+        },
+        "phinuVmin": {
+          "approximate": [
+            2.683663677,
+            2.683663677
+          ],
+          "lower_scaled_integer": 2683663677000000000,
+          "upper_scaled_integer": 2683663677000000000,
+          "scale": 1000000000000000000
+        },
+        "phinuVmax": {
+          "approximate": [
+            3.316336323,
+            3.316336323
+          ],
+          "lower_scaled_integer": 3316336323000000000,
+          "upper_scaled_integer": 3316336323000000000,
+          "scale": 1000000000000000000
+        },
+        "phinuGmin": {
+          "approximate": [
+            0.2173377902393195,
+            0.2173377902393196
+          ],
+          "lower_scaled_integer": 217337790239319504,
+          "upper_scaled_integer": 217337790239319588,
+          "scale": 1000000000000000000
+        },
+        "phinuGmax": {
+          "approximate": [
+            0.2015412302393195,
+            0.20154123023931958
+          ],
+          "lower_scaled_integer": 201541230239319504,
+          "upper_scaled_integer": 201541230239319588,
+          "scale": 1000000000000000000
+        },
+        "phinuCmin": {
+          "approximate": [
+            0.31415926535897926,
+            0.31415926535897937
+          ],
+          "lower_scaled_integer": 314159265358979256,
+          "upper_scaled_integer": 314159265358979382,
+          "scale": 1000000000000000000
+        },
+        "phinuCmax": {
+          "approximate": [
+            0.31415926535897926,
+            0.31415926535897937
+          ],
+          "lower_scaled_integer": 314159265358979256,
+          "upper_scaled_integer": 314159265358979382,
+          "scale": 1000000000000000000
+        },
+        "phiAG": {
+          "approximate": [
+            6.798767777174781,
+            6.798767777174781
+          ],
+          "lower_scaled_integer": 6798767777174780907,
+          "upper_scaled_integer": 6798767777174780991,
+          "scale": 1000000000000000000
+        },
+        "phiMuPlus": {
+          "approximate": [
+            7.561378600953886,
+            7.5613786009538995
+          ],
+          "lower_scaled_integer": 7561378600953886518,
+          "upper_scaled_integer": 7561378600953899872,
+          "scale": 1000000000000000000
+        },
+        "phiMuMinus": {
+          "approximate": [
+            7.561378600953886,
+            7.5613786009538995
+          ],
+          "lower_scaled_integer": 7561378600953886518,
+          "upper_scaled_integer": 7561378600953899872,
+          "scale": 1000000000000000000
+        },
+        "phiNminus": {
+          "approximate": [
+            225.10296030204947,
+            225.10296030205015
+          ],
+          "lower_scaled_integer": 225102960302049480583,
+          "upper_scaled_integer": 225102960302050144187,
+          "scale": 1000000000000000000
+        },
+        "phiNplus": {
+          "approximate": [
+            122.13188313825094,
+            122.1318831382828
+          ],
+          "lower_scaled_integer": 122131883138250935476,
+          "upper_scaled_integer": 122131883138282809324,
+          "scale": 1000000000000000000
+        },
+        "hTmin": {
+          "approximate": [
+            18.046530261921014,
+            18.046530261923674
+          ],
+          "lower_scaled_integer": 18046530261921012309,
+          "upper_scaled_integer": 18046530261923674725,
+          "scale": 1000000000000000000
+        },
+        "hTmax": {
+          "approximate": [
+            35.95346973807632,
+            35.95346973807899
+          ],
+          "lower_scaled_integer": 35953469738076325275,
+          "upper_scaled_integer": 35953469738078987691,
+          "scale": 1000000000000000000
+        },
+        "phiTmin": {
+          "approximate": [
+            -0.22096812436994787,
+            -0.22096812436580146
+          ],
+          "lower_scaled_integer": -220968124369947860,
+          "upper_scaled_integer": -220968124365801461,
+          "scale": 1000000000000000000
+        },
+        "phiTmax": {
+          "approximate": [
+            54.220968124365804,
+            54.220968124369946
+          ],
+          "lower_scaled_integer": 54220968124365801461,
+          "upper_scaled_integer": 54220968124369947860,
+          "scale": 1000000000000000000
+        },
+        "cosAlpha": {
+          "approximate": [
+            0.9974583267391385,
+            0.9974583267391389
+          ],
+          "lower_scaled_integer": 997458326739138488,
+          "upper_scaled_integer": 997458326739138963,
+          "scale": 1000000000000000000
+        }
+      }
+    },
+    "B": {
+      "xi_decimal": [
+        "0.08392001",
+        "-0.01059750",
+        "-0.59489990",
+        "-0.00555000",
+        "0"
+      ],
+      "VB": {
+        "approximate": [
+          0.16199999197024195,
+          0.16199999197024217
+        ],
+        "lower_scaled_integer": 161999991970241965,
+        "upper_scaled_integer": 161999991970242179,
+        "scale": 1000000000000000000
+      },
+      "Tff": {
+        "approximate": [
+          2.3003226652843054,
+          2.300322665287875
+        ],
+        "lower_scaled_integer": 2300322665284305401,
+        "upper_scaled_integer": 2300322665287875146,
+        "scale": 1000000000000000000
+      },
+      "hTmin": {
+        "approximate": [
+          -0.6996773347156946,
+          -0.6996773347121249
+        ],
+        "lower_scaled_integer": -699677334715694599,
+        "upper_scaled_integer": -699677334712124854,
+        "scale": 1000000000000000000
+      },
+      "phiTmin": {
+        "approximate": [
+          17.94409860318177,
+          17.944098603186497
+        ],
+        "lower_scaled_integer": 17944098603181771447,
+        "upper_scaled_integer": 17944098603186497142,
+        "scale": 1000000000000000000
+      },
+      "all_checks": {
+        "hVmin": {
+          "approximate": [
+            8.18392001,
+            8.18392001
+          ],
+          "lower_scaled_integer": 8183920010000000000,
+          "upper_scaled_integer": 8183920010000000000,
+          "scale": 1000000000000000000
+        },
+        "hVmax": {
+          "approximate": [
+            7.81607999,
+            7.81607999
+          ],
+          "lower_scaled_integer": 7816079990000000000,
+          "upper_scaled_integer": 7816079990000000000,
+          "scale": 1000000000000000000
+        },
+        "hGmin": {
+          "approximate": [
+            0.1639354251994329,
+            0.163935425199433
+          ],
+          "lower_scaled_integer": 163935425199432920,
+          "upper_scaled_integer": 163935425199432990,
+          "scale": 1000000000000000000
+        },
+        "hGmax": {
+          "approximate": [
+            0.18513042519943293,
+            0.18513042519943299
+          ],
+          "lower_scaled_integer": 185130425199432920,
+          "upper_scaled_integer": 185130425199432990,
+          "scale": 1000000000000000000
+        },
+        "psiVmin": {
+          "approximate": [
+            9.225804112,
+            9.225804112
+          ],
+          "lower_scaled_integer": 9225804112000000000,
+          "upper_scaled_integer": 9225804112000000000,
+          "scale": 1000000000000000000
+        },
+        "psiVmax": {
+          "approximate": [
+            9.974195888,
+            9.974195888
+          ],
+          "lower_scaled_integer": 9974195888000000000,
+          "upper_scaled_integer": 9974195888000000000,
+          "scale": 1000000000000000000
+        },
+        "psiGmin": {
+          "approximate": [
+            0.1911725102393195,
+            0.19117251023931958
+          ],
+          "lower_scaled_integer": 191172510239319504,
+          "upper_scaled_integer": 191172510239319588,
+          "scale": 1000000000000000000
+        },
+        "psiGmax": {
+          "approximate": [
+            0.2277065102393195,
+            0.2277065102393196
+          ],
+          "lower_scaled_integer": 227706510239319504,
+          "upper_scaled_integer": 227706510239319588,
+          "scale": 1000000000000000000
+        },
+        "hnuVmin": {
+          "approximate": [
+            1.4051001,
+            1.4051001
+          ],
+          "lower_scaled_integer": 1405100100000000000,
+          "upper_scaled_integer": 1405100100000000000,
+          "scale": 1000000000000000000
+        },
+        "hnuVmax": {
+          "approximate": [
+            2.5948999,
+            2.5948999
+          ],
+          "lower_scaled_integer": 2594899900000000000,
+          "upper_scaled_integer": 2594899900000000000,
+          "scale": 1000000000000000000
+        },
+        "hnuGmin": {
+          "approximate": [
+            0.13407634015954634,
+            0.1340763401595464
+          ],
+          "lower_scaled_integer": 134076340159546336,
+          "upper_scaled_integer": 134076340159546392,
+          "scale": 1000000000000000000
+        },
+        "hnuGmax": {
+          "approximate": [
+            0.14517634015954634,
+            0.1451763401595464
+          ],
+          "lower_scaled_integer": 145176340159546336,
+          "upper_scaled_integer": 145176340159546392,
+          "scale": 1000000000000000000
+        },
+        "hnuCmin": {
+          "approximate": [
+            0.2094395102393195,
+            0.2094395102393196
+          ],
+          "lower_scaled_integer": 209439510239319504,
+          "upper_scaled_integer": 209439510239319588,
+          "scale": 1000000000000000000
+        },
+        "hnuCmax": {
+          "approximate": [
+            0.2094395102393195,
+            0.2094395102393196
+          ],
+          "lower_scaled_integer": 209439510239319504,
+          "upper_scaled_integer": 209439510239319588,
+          "scale": 1000000000000000000
+        },
+        "hAG": {
+          "approximate": [
+            5.5941785713468075,
+            5.5941785713468075
+          ],
+          "lower_scaled_integer": 5594178571346807357,
+          "upper_scaled_integer": 5594178571346807436,
+          "scale": 1000000000000000000
+        },
+        "hMuPlus": {
+          "approximate": [
+            6.717916158587093,
+            6.717916158587104
+          ],
+          "lower_scaled_integer": 6717916158587092510,
+          "upper_scaled_integer": 6717916158587104377,
+          "scale": 1000000000000000000
+        },
+        "hMuMinus": {
+          "approximate": [
+            6.717916158587093,
+            6.717916158587104
+          ],
+          "lower_scaled_integer": 6717916158587092510,
+          "upper_scaled_integer": 6717916158587104377,
+          "scale": 1000000000000000000
+        },
+        "hNminus": {
+          "approximate": [
+            198.28841356071837,
+            198.288413560719
+          ],
+          "lower_scaled_integer": 198288413560718358360,
+          "upper_scaled_integer": 198288413560718996155,
+          "scale": 1000000000000000000
+        },
+        "hNplus": {
+          "approximate": [
+            135.66956025197567,
+            135.6695602520064
+          ],
+          "lower_scaled_integer": 135669560251975673807,
+          "upper_scaled_integer": 135669560252006379148,
+          "scale": 1000000000000000000
+        },
+        "N_alpha": {
+          "approximate": [
+            1311.939737450028,
+            2716.903442969792
+          ],
+          "lower_scaled_integer": 1311939737450027994898,
+          "upper_scaled_integer": 2716903442969792413026,
+          "scale": 1000000000000000000
+        },
+        "phiVmin": {
+          "approximate": [
+            11.1395929084,
+            11.1395929084
+          ],
+          "lower_scaled_integer": 11139592908400000000,
+          "upper_scaled_integer": 11139592908400000000,
+          "scale": 1000000000000000000
+        },
+        "phiVmax": {
+          "approximate": [
+            11.9004070916,
+            11.9004070916
+          ],
+          "lower_scaled_integer": 11900407091600000000,
+          "upper_scaled_integer": 11900407091600000000,
+          "scale": 1000000000000000000
+        },
+        "phiGmin": {
+          "approximate": [
+            0.24545401228718342,
+            0.2454540122871835
+          ],
+          "lower_scaled_integer": 245454012287183404,
+          "upper_scaled_integer": 245454012287183506,
+          "scale": 1000000000000000000
+        },
+        "phiGmax": {
+          "approximate": [
+            0.2572008122871834,
+            0.2572008122871835
+          ],
+          "lower_scaled_integer": 257200812287183404,
+          "upper_scaled_integer": 257200812287183506,
+          "scale": 1000000000000000000
+        },
+        "phinuVmin": {
+          "approximate": [
+            2.890158004,
+            2.890158004
+          ],
+          "lower_scaled_integer": 2890158004000000000,
+          "upper_scaled_integer": 2890158004000000000,
+          "scale": 1000000000000000000
+        },
+        "phinuVmax": {
+          "approximate": [
+            3.109841996,
+            3.109841996
+          ],
+          "lower_scaled_integer": 3109841996000000000,
+          "upper_scaled_integer": 3109841996000000000,
+          "scale": 1000000000000000000
+        },
+        "phinuGmin": {
+          "approximate": [
+            0.2238215102393195,
+            0.2238215102393196
+          ],
+          "lower_scaled_integer": 223821510239319504,
+          "upper_scaled_integer": 223821510239319588,
+          "scale": 1000000000000000000
+        },
+        "phinuGmax": {
+          "approximate": [
+            0.1950575102393195,
+            0.19505751023931958
+          ],
+          "lower_scaled_integer": 195057510239319504,
+          "upper_scaled_integer": 195057510239319588,
+          "scale": 1000000000000000000
+        },
+        "phinuCmin": {
+          "approximate": [
+            0.31415926535897926,
+            0.31415926535897937
+          ],
+          "lower_scaled_integer": 314159265358979256,
+          "upper_scaled_integer": 314159265358979382,
+          "scale": 1000000000000000000
+        },
+        "phinuCmax": {
+          "approximate": [
+            0.31415926535897926,
+            0.31415926535897937
+          ],
+          "lower_scaled_integer": 314159265358979256,
+          "upper_scaled_integer": 314159265358979382,
+          "scale": 1000000000000000000
+        },
+        "phiAG": {
+          "approximate": [
+            6.463945759102829,
+            6.463945759102829
+          ],
+          "lower_scaled_integer": 6463945759102829302,
+          "upper_scaled_integer": 6463945759102829383,
+          "scale": 1000000000000000000
+        },
+        "phiMuPlus": {
+          "approximate": [
+            7.326933699941319,
+            7.326933699941331
+          ],
+          "lower_scaled_integer": 7326933699941318532,
+          "upper_scaled_integer": 7326933699941331471,
+          "scale": 1000000000000000000
+        },
+        "phiMuMinus": {
+          "approximate": [
+            7.326933699941319,
+            7.326933699941331
+          ],
+          "lower_scaled_integer": 7326933699941318532,
+          "upper_scaled_integer": 7326933699941331471,
+          "scale": 1000000000000000000
+        },
+        "phiNminus": {
+          "approximate": [
+            218.0922594472351,
+            218.09225944723576
+          ],
+          "lower_scaled_integer": 218092259447235112900,
+          "upper_scaled_integer": 218092259447235771047,
+          "scale": 1000000000000000000
+        },
+        "phiNplus": {
+          "approximate": [
+            107.35332128916028,
+            107.35332128919194
+          ],
+          "lower_scaled_integer": 107353321289160273188,
+          "upper_scaled_integer": 107353321289191937521,
+          "scale": 1000000000000000000
+        },
+        "hTmin": {
+          "approximate": [
+            -0.6996773347156946,
+            -0.6996773347121249
+          ],
+          "lower_scaled_integer": -699677334715694599,
+          "upper_scaled_integer": -699677334712124854,
+          "scale": 1000000000000000000
+        },
+        "hTmax": {
+          "approximate": [
+            54.69967733471213,
+            54.699677334715695
+          ],
+          "lower_scaled_integer": 54699677334712124854,
+          "upper_scaled_integer": 54699677334715694599,
+          "scale": 1000000000000000000
+        },
+        "phiTmin": {
+          "approximate": [
+            17.94409860318177,
+            17.944098603186497
+          ],
+          "lower_scaled_integer": 17944098603181771447,
+          "upper_scaled_integer": 17944098603186497142,
+          "scale": 1000000000000000000
+        },
+        "phiTmax": {
+          "approximate": [
+            36.0559013968135,
+            36.05590139681823
+          ],
+          "lower_scaled_integer": 36055901396813502858,
+          "upper_scaled_integer": 36055901396818228553,
+          "scale": 1000000000000000000
+        },
+        "cosAlpha": {
+          "approximate": [
+            0.9963485342577606,
+            0.9963485342577613
+          ],
+          "lower_scaled_integer": 996348534257760562,
+          "upper_scaled_integer": 996348534257761257,
+          "scale": 1000000000000000000
+        }
+      }
+    }
+  },
+  "mu_lower_bound": "0.145",
+  "mu_verification": {
+    "speed_pivot": {
+      "approximate": [
+        9.047619047619e-05,
+        9.0476190476191e-05
+      ],
+      "lower_scaled_integer": 90476190476190,
+      "upper_scaled_integer": 90476190476191,
+      "scale": 1000000000000000000
+    },
+    "speed_det": {
+      "approximate": [
+        6.2117346938774e-05,
+        6.2117346938777e-05
+      ],
+      "lower_scaled_integer": 62117346938774,
+      "upper_scaled_integer": 62117346938777,
+      "scale": 1000000000000000000
+    },
+    "climb_pivot": {
+      "approximate": [
+        105.39632164843253,
+        105.39632164843268
+      ],
+      "lower_scaled_integer": 105396321648432531017,
+      "upper_scaled_integer": 105396321648432675625,
+      "scale": 1000000000000000000
+    },
+    "climb_det": {
+      "approximate": [
+        12754.920129234142,
+        12754.920129234173
+      ],
+      "lower_scaled_integer": 12754920129234141597648,
+      "upper_scaled_integer": 12754920129234172965570,
+      "scale": 1000000000000000000
+    },
+    "course_pivot": {
+      "approximate": [
+        48.81464650668502,
+        48.81464650668507
+      ],
+      "lower_scaled_integer": 48814646506685023146,
+      "upper_scaled_integer": 48814646506685070046,
+      "scale": 1000000000000000000
+    }
+  }
+}

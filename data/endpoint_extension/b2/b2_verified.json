@@ -1,0 +1,139 @@
+{
+  "radius": "51/256",
+  "epsilon_mps": 0.19921875,
+  "angle_deg": 0.2995903825425687,
+  "next_unresolved": "409/2048",
+  "first_strict_witness": "7/32",
+  "lower_loss_bound_N": 7.546821572388,
+  "upper_loss_bound_N": 9.999966660617,
+  "verified_distinct_leaves": 52366,
+  "groups": {
+    "\u4fdd\u6301": {
+      "n": 3603,
+      "inside": 3603,
+      "boundary": 0,
+      "outside": 0,
+      "B1_016": 3603,
+      "covered": 3603,
+      "G": 3603,
+      "J_air_box": 3603,
+      "J": 3603,
+      "KB_extra_1": 3603,
+      "records": 3
+    },
+    "\u65f6\u53d8\u98ce": {
+      "n": 7203,
+      "inside": 4144,
+      "boundary": 196,
+      "outside": 2863,
+      "B1_016": 121,
+      "covered": 232,
+      "G": 232,
+      "J_air_box": 232,
+      "J": 232,
+      "KB_extra_1": 4144,
+      "records": 3
+    },
+    "\u542b\u566a\u58f0": {
+      "n": 7203,
+      "inside": 3943,
+      "boundary": 298,
+      "outside": 2962,
+      "B1_016": 100,
+      "covered": 204,
+      "G": 204,
+      "J_air_box": 204,
+      "J": 204,
+      "KB_extra_1": 3943,
+      "records": 3
+    },
+    "A1 \u539f QP": {
+      "n": 40817,
+      "inside": 34944,
+      "boundary": 1488,
+      "outside": 4385,
+      "B1_016": 160,
+      "covered": 292,
+      "G": 292,
+      "J_air_box": 292,
+      "J": 209,
+      "KB_extra_1": 15328,
+      "records": 17
+    },
+    "31 m/s \u538b\u529b": {
+      "n": 2316,
+      "inside": 560,
+      "boundary": 0,
+      "outside": 1756,
+      "B1_016": 560,
+      "covered": 560,
+      "G": 560,
+      "J_air_box": 560,
+      "J": 560,
+      "KB_extra_1": 560,
+      "records": 5
+    },
+    "32 m/s \u538b\u529b": {
+      "n": 2011,
+      "inside": 456,
+      "boundary": 0,
+      "outside": 1555,
+      "B1_016": 456,
+      "covered": 456,
+      "G": 456,
+      "J_air_box": 456,
+      "J": 456,
+      "KB_extra_1": 456,
+      "records": 4
+    },
+    "A3 \u914d\u7f6e\u8bb0\u5f55": {
+      "n": 43218,
+      "inside": 37102,
+      "boundary": 1768,
+      "outside": 4348,
+      "B1_016": 222,
+      "covered": 372,
+      "G": 372,
+      "J_air_box": 372,
+      "J": 72,
+      "KB_extra_1": 23271,
+      "records": 18
+    }
+  },
+  "event_groups": {
+    "initial": {
+      "n": 12,
+      "covered": 5,
+      "G": 5,
+      "J": 0,
+      "B1_016": 2,
+      "KB_extra_1": 12,
+      "old_local_J": 3
+    },
+    "inflight": {
+      "n": 9,
+      "covered": 0,
+      "G": 0,
+      "J": 0,
+      "B1_016": 0,
+      "KB_extra_1": 4,
+      "old_local_J": 0
+    }
+  },
+  "pressure_minima": [
+    {
+      "case": "V31_N10",
+      "end_covered_s": 5.550000000000001,
+      "minimum_upper_s": 18.7,
+      "minimum_upper_N": 3.43686852023302,
+      "at_min_covered": 0
+    },
+    {
+      "case": "V32_N10",
+      "end_covered_s": 5.65,
+      "minimum_upper_s": 18.4,
+      "minimum_upper_N": 3.1429706251423113,
+      "at_min_covered": 0
+    }
+  ]
+}

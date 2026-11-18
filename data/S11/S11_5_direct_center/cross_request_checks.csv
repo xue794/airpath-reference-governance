@@ -1,0 +1,3 @@
+﻿step,n,max_abs_13plant_state_diff,max_abs_4actuator_state_diff,max_abs_passive_integral_diff
+010,701,0.0,0.0,33.750000000000014
+005,701,0.0,0.0,33.75000000000004

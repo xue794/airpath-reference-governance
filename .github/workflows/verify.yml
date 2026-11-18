@@ -1,0 +1,34 @@
+name: Verify saved-output release
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  saved-output-verification:
+    name: ${{ matrix.os }} / Python ${{ matrix.python }}
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 10
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+        python: ['3.10', '3.14']
+    steps:
+      - name: Check out frozen files
+        # Official latest release verified on 2026-11-18: v7.0.1.
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          persist-credentials: false
+      - name: Set up Python
+        # Official latest release verified on 2026-11-18: v7.1.0.
+        uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0
+        with:
+          python-version: ${{ matrix.python }}
+      - name: Verify from outside the repository directory
+        working-directory: ${{ runner.temp }}
+        run: python "${{ github.workspace }}/scripts/verify_release.py"

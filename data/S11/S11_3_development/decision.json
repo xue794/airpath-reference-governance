@@ -1,0 +1,37 @@
+{
+  "runs": 14,
+  "unique_arms": 7,
+  "finished": 10,
+  "scope": "D0 only",
+  "allow_confirmation": true,
+  "direct_speed_effect": true,
+  "same_tube_endpoint_effect": false,
+  "backup_free_endpoint_effect_vs_T": true,
+  "independently_resolved_no_tube_N10_vs_Am_N": 0.001972671264439896,
+  "no_tube_ablation": [
+    {
+      "step": "005",
+      "changed_against_T": 246,
+      "first_s": 13.85,
+      "changed_against_Am": 246,
+      "max_input_difference": 1.62550213191371,
+      "min_upper_row": -154.252383209207
+    },
+    {
+      "step": "010",
+      "changed_against_T": 246,
+      "first_s": 13.85,
+      "changed_against_Am": 246,
+      "max_input_difference": 1.62550213617924,
+      "min_upper_row": -154.252383427036
+    }
+  ],
+  "max_abs_prefix36": 3.2931926465614697e-11,
+  "thrust_field_correction": {
+    "Tref": 7.9870427662003,
+    "Tstar": 7.60975288544168,
+    "Traw": 7.607062652524547,
+    "Tact": 6.8480607884269995
+  },
+  "confirmation_runs": 0
+}

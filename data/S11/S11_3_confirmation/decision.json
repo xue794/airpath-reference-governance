@@ -1,0 +1,43 @@
+{
+  "unique_case_arms": 15,
+  "integrations": 30,
+  "completed35": 22,
+  "results": {
+    "C1": {
+      "speed_scale_pass": true,
+      "both_F_complete": true,
+      "out_of_old_low_plateau_both": true,
+      "O_events": [
+        "speed_chart"
+      ],
+      "independent_over_D": false,
+      "independent_over_A": false
+    },
+    "C2": {
+      "speed_scale_pass": true,
+      "both_F_complete": true,
+      "out_of_old_low_plateau_both": true,
+      "O_events": [
+        "speed_chart"
+      ],
+      "independent_over_D": false,
+      "independent_over_A": false
+    },
+    "C3": {
+      "speed_scale_pass": true,
+      "both_F_complete": true,
+      "out_of_old_low_plateau_both": true,
+      "O_events": [
+        "speed_chart"
+      ],
+      "independent_over_D": false,
+      "independent_over_A": false
+    }
+  },
+  "C1_no_tube_N10_vs_T_reproduced": true,
+  "C1_no_tube_N10_vs_Am_scale": false,
+  "C1_C2_governed_plateau_delta": 8.19594898260334e-06,
+  "C1_C2_plateau_resolved": false,
+  "strong_gate": false,
+  "optional_scalar_integrations": 0
+}

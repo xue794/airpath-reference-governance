@@ -1,0 +1,76 @@
+function run_static_endpoint_probe()
+% Exploratory finite static scan. Original and first-round files unchanged.
+% Both selectors already use the SAME coupled implicit root and Tff bounds.
+% All admitted comparison states satisfy the current 10N endpoint reserves.
+here=fileparts(mfilename('fullpath'));
+base='D:/Research/paper1_Submission/revision_probe_20261106/source_snapshot';
+addpath([base '/core']);addpath([base '/W2E']);addpath(here);
+R=rg_params();R.rhoB=.10;Q=w2b_options();Q.UseParallel=false;
+fprintf('Static endpoint scan MATLAB %s\n',version);
+stateGrid=struct('V',[30 31 32 34 36 38.1], 'nuV',[-.5 0 .5], ...
+ 'nuGamma_deg',[0 .5 1 2 3], 'nuChi_deg',[0 2 4 6 8]);
+targets={'pullup','pushover','turn30','turnminus30','low_speed_climb','fast_climb','hold_coordinates'};
+states=struct([]);rows=struct([]);wi=0;si=0;
+for V=stateGrid.V
+ for nuV=stateGrid.nuV
+  for nuG=stateGrid.nuGamma_deg
+   for nuC=stateGrid.nuChi_deg
+    x=[V;0;0;nuV;nuG*pi/180;nuC*pi/180];F=rg_feedforward(x,R);si=si+1;
+    hs=[V-R.Vmin;R.Vmax-V;R.gammaMax;R.gammaMax;R.nuMax-abs(x(4:6));F.aGamma-R.aGammaMin;R.muMax-abs(F.mu)];
+    psi=[nuV+R.k1*(V-R.Vmin);-nuV+R.k1*(R.Vmax-V);nuG*pi/180+R.k1*R.gammaMax;-nuG*pi/180+R.k1*R.gammaMax];
+    conventional=all(hs>=-1e-10)&&all(psi>=-1e-10);
+    admit=conventional&&F.rootInfo.bracket&&F.T>=3&&F.T<=57&&F.hNminus>=0&&F.hNplus>=0;
+    ss=struct('state_id',si,'V',V,'nuV',nuV,'nuGamma_deg',nuG,'nuChi_deg',nuC, ...
+     'conventional_ok',conventional,'root_bracket',F.rootInfo.bracket, ...
+     'Tff_N',F.T,'alpha_deg',F.alpha*180/pi,'bank_deg',F.mu*180/pi, ...
+     'hNminus_N',F.hNminus,'hNplus_N',F.hNplus,'admitted',admit);
+    states=[states;ss]; %#ok<AGROW>
+    if ~admit,continue;end
+    C=rg_constraint_affine(x,R);R0=R;R0.DeltaN=0;C0=rg_constraint_affine(x,R0);
+    ccs=[V 8 0;V -8 0;V 0 30;V 0 -30;30 8 0;46 8 0;V 0 0];
+    ccs(:,2:3)=ccs(:,2:3)*pi/180;
+    for j=1:size(ccs,1)
+     cc=ccs(j,:)';u0=rg_nominal_control(x,cc,R);ix=[1:13 16:17];
+     O=Q;O.FeasibleStart=rg_backup_control(x,R);
+     [ut,Dt]=w2b_qp3(u0,-C.G(ix,:),C.c(ix),Q.Scale,O);
+     [uf,Df]=w2b_qp3(u0,-C.G(1:17,:),C.c(1:17),Q.Scale,O);
+     [uz,Dz]=w2b_qp3(u0,-C0.G(1:17,:),C0.c(1:17),Q.Scale,O);
+     pt=C.c+C.G*ut;pf=C.c+C.G*uf;pzt=C0.c+C0.G*ut;pz=C0.c+C0.G*uz;
+     wi=wi+1;
+     rr=struct('state_id',si,'target',targets{j},'V',V,'nuV',nuV,'nuGamma_deg',nuG,'nuChi_deg',nuC, ...
+      'targetV',cc(1),'targetGamma_deg',cc(2)*180/pi,'targetChi_deg',cc(3)*180/pi, ...
+      'alpha_deg',F.alpha*180/pi,'Tff_N',F.T,'bank_deg',F.mu*180/pi,'hNminus_N',F.hNminus,'hNplus_N',F.hNplus, ...
+      'thrust_qp_ok',Dt.Success,'full_qp_ok',Df.Success,'zero_reserve_qp_ok',Dz.Success, ...
+      'thrust_Nminus_phi',pt(14),'thrust_Nplus_phi',pt(15), ...
+      'thrust_raw_Nminus_phi',pzt(14),'thrust_raw_Nplus_phi',pzt(15), ...
+      'full_Nminus_phi',pf(14),'full_Nplus_phi',pf(15), ...
+      'zero_Nminus_phi',pz(14),'zero_Nplus_phi',pz(15), ...
+      'full_minus_thrust_scaled',norm((uf-ut)./Q.Scale,inf), ...
+      'zero_minus_thrust_scaled',norm((uz-ut)./Q.Scale,inf), ...
+      'thrust_uV',ut(1),'thrust_uGamma',ut(2),'thrust_uChi',ut(3), ...
+      'full_uV',uf(1),'full_uGamma',uf(2),'full_uChi',uf(3), ...
+      'zero_uV',uz(1),'zero_uGamma',uz(2),'zero_uChi',uz(3), ...
+      'max_KKT',max([Dt.PrimalNormalized Dt.StationarityNormalized Dt.ComplementarityNormalized ...
+                    Df.PrimalNormalized Df.StationarityNormalized Df.ComplementarityNormalized ...
+                    Dz.PrimalNormalized Dz.StationarityNormalized Dz.ComplementarityNormalized]));
+     rows=[rows;rr]; %#ok<AGROW>
+    end
+   end
+  end
+ end
+ fprintf('V=%g completed states=%d comparisons=%d\n',V,si,wi);
+end
+writetable(struct2table(states),fullfile(here,'static_states.csv'));
+writetable(struct2table(rows),fullfile(here,'static_comparisons.csv'));
+valid=[rows.thrust_qp_ok]&[rows.full_qp_ok]&[rows.zero_reserve_qp_ok];
+hits10=valid&([rows.thrust_Nminus_phi]<-1e-8|[rows.thrust_Nplus_phi]<-1e-8);
+hits0=valid&([rows.thrust_raw_Nminus_phi]<-1e-8|[rows.thrust_raw_Nplus_phi]<-1e-8);
+Summary=struct('state_count',numel(states),'admitted_state_count',sum([states.admitted]), ...
+ 'comparisons',numel(rows),'all_three_qp_success',sum(valid), ...
+ 'thrust_only_endpoint10_derivative_violations',sum(hits10), ...
+ 'thrust_only_endpoint0_derivative_violations',sum(hits0), ...
+ 'maxKKT',max([rows.max_KKT]));
+save(fullfile(here,'static_endpoint_probe.mat'),'R','Q','stateGrid','targets','states','rows','Summary');
+fid=fopen(fullfile(here,'static_summary.json'),'w');fprintf(fid,'%s',jsonencode(Summary));fclose(fid);
+disp(Summary);fprintf('STATIC_ENDPOINT_PROBE_DONE\n');
+end

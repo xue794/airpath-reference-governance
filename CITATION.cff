@@ -1,0 +1,33 @@
+cff-version: 1.2.0
+message: "If you use these computational materials, please cite this version and identify the accompanying manuscript."
+type: software
+repository-code: "https://github.com/xue794/airpath-reference-governance"
+title: "Air-Path Reference Governance for Fixed-Wing Tracking under Wind"
+version: "1.0.0"
+license:
+  - MIT
+  - CC-BY-4.0
+date-released: "2026-11-18"
+authors:
+  - family-names: "Ren"
+    given-names: "Tianming"
+  - family-names: "Li"
+    given-names: "Ou"
+  - family-names: "Jiang"
+    given-names: "Guo"
+  - family-names: "Zhong"
+    given-names: "Xue"
+abstract: >-
+  Computational materials accompanying the manuscript of the same title.
+  The archive includes fixed-wing reference-governor data, frozen source and
+  inputs, saved-output reconstruction checks, and an isolated MATLAB entry
+  for the representative C1 Direct case. Verification covers selected saved
+  summaries and one MATLAB reintegration, rather than an end-to-end rerun of
+  every study or interval proof.
+keywords:
+  - fixed-wing UAV
+  - reference governor
+  - control barrier function
+  - coupled lift-thrust inversion
+  - feedback margins
+  - computational reproducibility

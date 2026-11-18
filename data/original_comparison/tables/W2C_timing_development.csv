@@ -1,0 +1,2 @@
+Status,Samples,Repeats,ConstraintMedian_ms,ScalarSelectionMedian_ms,QPSelectionMedian_ms,QP_over_ScalarSelection,ScalarWholeGovernorMedian_ms,QPWholeGovernorMedian_ms,QP_over_ScalarWhole,Note
+COMPLETED,80,10,0.74903,0.01587,0.193075,12.1660365469439,0.77168,1.03039,1.33525554634045,DEVELOPMENT_TELEMETRY_NOT_PUBLICATION_BENCHMARK

@@ -1,0 +1,53 @@
+Original scientific source and execution scope
+
+Two release workflows have been checked:
+1. python/reproduce.py followed by python/verify.py reconstructs selected
+reported statistics from saved outputs.
+2. matlab/run_representative_direct.m copies the frozen source into an isolated
+output tree and runs the original C1 Direct case at MaxStep=.005 to 35 s.
+python/verify_matlab.py compares its 701-point trace and metrics with the
+archive. All 21,030 saved numeric values matched in this release check.
+The scientific functions and parameters were unchanged. No other MATLAB
+case or interval-tree regeneration was performed for this release.
+
+source/revision_probe_20261106/source_snapshot/{core,W2C,W2D,W2E,W2F}:
+frozen plant, controller, governor, allocation, actuator and comparison code.
+W2E contains the existing frozen sample/input records. The original MATLAB
+drivers are run_p1_aerospace_w2e, run_p1_aerospace_w2d, and related stage entries.
+Their full output archives and environment-dependent dispatch are not copied.
+
+source/revision_wp3_20261107 and source/revision_wp4_20261107:
+original margin-transfer and layered-diagnostic analysis modules. They retain
+their original input paths. The saved input/output subset is indexed in data/.
+These are provenance sources, not a promise of an all-stages one-command run.
+
+source/revision_r3_extension_20261107/{a1,a2,a3,b1,b2}:
+trajectory reproduction, same-state row deletion, closed-loop contrasts and
+force-reserve/error-box analyses. Existing result summaries are under
+data/endpoint_extension/. Search-budget exhaustion is not a certificate.
+
+source/decel_region_20261108: moving-backup affine construction and regional
+interval code. Protocol dependency files from D0 and confirmation are copied
+at their original relative paths. Saved certificate records are in data/S11/.
+
+source/decel_d0_20261108/run_d0.m:
+original MATLAB entry run_d0('F',.005), with O/F/D/A/T/N10/Am alternatives.
+source/decel_confirm_20261108/run_confirm.m:
+original confirmation driver; read its signature and protocol.json before use.
+source/decel_center_20261108/run_direct.m:
+original entry run_direct('C1',.005) or run_direct('C2',.005). It loads the
+corresponding archived F.mat included by the Direct protocol, checks the
+shared controller, and then integrates the direct-center configuration.
+
+Use a fresh extracted copy for any future MATLAB execution. Original entries
+write into per-study runs/ directories and may otherwise overwrite copied
+frozen inputs or existing outputs. Do not recursively add all study folders
+to the MATLAB path. Some original Python schedulers require machine-path
+adaptation; changing a launcher does not change the scientific source.
+
+FROZEN_INPUT_HASH_CHECK.json records byte-level agreement with the historical
+D0, confirmation and Direct protocol dependencies. It is an identity check.
+The separate MATLAB_REINTEGRATION.json documents the successful C1 Direct
+run through the new isolated entry. This one-case check does not validate
+every original driver or study. A complete portable all-study reintegration
+release remains outside this package's verified scope.

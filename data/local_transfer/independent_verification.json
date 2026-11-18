@@ -1,0 +1,151 @@
+{
+  "input_trajectories_unchanged": 7,
+  "source_files_unchanged": 315,
+  "precision_digits": 70,
+  "sample_rule": "12 equally spaced saved indices per trajectory, without selection by result",
+  "numerical_tolerance": 1e-08,
+  "checks": [
+    {
+      "key": "Proposed_hold",
+      "selected_indices": [
+        0,
+        109,
+        218,
+        327,
+        436,
+        545,
+        654,
+        763,
+        872,
+        981,
+        1090,
+        1200
+      ],
+      "evaluations": 324,
+      "derivative_checks": 972,
+      "all_saved_certificates_checked": 1201
+    },
+    {
+      "key": "MatchedQP_hold",
+      "selected_indices": [
+        0,
+        109,
+        218,
+        327,
+        436,
+        545,
+        654,
+        763,
+        872,
+        981,
+        1090,
+        1200
+      ],
+      "evaluations": 324,
+      "derivative_checks": 972,
+      "all_saved_certificates_checked": 1201
+    },
+    {
+      "key": "Proposed_varying",
+      "selected_indices": [
+        0,
+        218,
+        436,
+        654,
+        872,
+        1090,
+        1309,
+        1527,
+        1745,
+        1963,
+        2181,
+        2400
+      ],
+      "evaluations": 324,
+      "derivative_checks": 972,
+      "all_saved_certificates_checked": 2401
+    },
+    {
+      "key": "MatchedQP_varying",
+      "selected_indices": [
+        0,
+        218,
+        436,
+        654,
+        872,
+        1090,
+        1309,
+        1527,
+        1745,
+        1963,
+        2181,
+        2400
+      ],
+      "evaluations": 324,
+      "derivative_checks": 972,
+      "all_saved_certificates_checked": 2401
+    },
+    {
+      "key": "Transparent_varying",
+      "selected_indices": [
+        0,
+        218,
+        436,
+        654,
+        872,
+        1090,
+        1309,
+        1527,
+        1745,
+        1963,
+        2181,
+        2400
+      ],
+      "evaluations": 324,
+      "derivative_checks": 972,
+      "all_saved_certificates_checked": 2401
+    },
+    {
+      "key": "Proposed_noisy",
+      "selected_indices": [
+        0,
+        218,
+        436,
+        654,
+        872,
+        1090,
+        1309,
+        1527,
+        1745,
+        1963,
+        2181,
+        2400
+      ],
+      "evaluations": 324,
+      "derivative_checks": 972,
+      "all_saved_certificates_checked": 2401
+    },
+    {
+      "key": "MatchedQP_noisy",
+      "selected_indices": [
+        0,
+        218,
+        436,
+        654,
+        872,
+        1090,
+        1309,
+        1527,
+        1745,
+        1963,
+        2181,
+        2400
+      ],
+      "evaluations": 324,
+      "derivative_checks": 972,
+      "all_saved_certificates_checked": 2401
+    }
+  ],
+  "interval_enclosure_violations": 0,
+  "all_passed": true
+}

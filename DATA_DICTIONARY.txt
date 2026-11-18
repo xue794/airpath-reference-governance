@@ -1,0 +1,39 @@
+Data conventions
+
+Methods: Proposed = Scalar; MatchedQP = Matched-QP; Transparent = unmodified
+nominal reference. Deceleration arms O = original static backup, F = moving
+backup with full rows, D = endpoint deletion inside the moving backup,
+A = matched angle rows inside the moving backup, T = thrust/conventional
+rows with no backup, N10 = 10 N endpoint reserve with no backup,
+Am = force-matched angle protection with no backup, Direct = center following.
+
+Time is in seconds. Suffix 005 means maximum integration step 0.005 s;
+010 means 0.01 s. Saved output grids are generally 0.05 s. Counts refer to
+saved points and do not establish continuous-time trajectory guarantees.
+
+PositionRMS_grid_m / PosRMSFull_m / position_RMS: square root of the arithmetic
+mean of squared saved position errors, in metres. Full-horizon quantities
+are not assigned to an incomplete requested horizon. Common-prefix metrics
+use the separately declared intersection window.
+
+Deceleration speed error: integral of abs(vground-vrequest) over 3-16 s,
+computed by the trapezoidal rule on the saved grid and divided by 13 s.
+Plateau means use 25-35 s. Feedback-gap minima use 14-20 s where indicated.
+Angles with _deg suffix are degrees; implementation angles are radians.
+Force gaps and thrust are N. reference_T_N / Tref refers to the nominal
+reference inversion, raw_T_N / Traw to feedback before actuator clipping,
+actuator_T_N / Tact to the modeled applied actuator state.
+
+VB_over_rho > 1 indicates membership outside the static certified ellipsoid;
+it is not itself a physical actuator or aircraft limit violation. Membership
+and margin-transfer assumptions are separate from invariant tracking bounds.
+
+NaN or blank values indicate unavailable/not-applicable values (often an
+incomplete horizon); do not replace them with zero. Failure classes and
+completion flags remain in the source tables, including all 500 pairs.
+Positive dPosRMSFull_m means QP minus Scalar and favors Scalar on that metric.
+
+Timing records are block-average per-call costs, not individual-call samples.
+The reported whole-governor reduction is a ratio of marginal medians, distinct
+from a median of the within-block ratios. Historical source paths in some
+tables identify provenance; the release map supplies their local counterpart.

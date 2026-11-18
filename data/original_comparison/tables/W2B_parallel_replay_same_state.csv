@@ -1,0 +1,9 @@
+"Stage","Id","Name","Pass","NormalizedDifference"
+"same-state",1,"hold",1,0
+"same-state",62,"varying",1,0
+"same-state",122,"varying",1,0
+"same-state",183,"noisy",1,0
+"same-state",243,"noisy",1,0
+"same-state",304,"certified_small",1,0
+"same-state",364,"certified_small",1,0
+"same-state",425,"wrap",1,0

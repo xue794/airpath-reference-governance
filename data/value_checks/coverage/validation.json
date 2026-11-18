@@ -1,0 +1,115 @@
+{
+  "all_checks_passed": true,
+  "cells": 9,
+  "saved_samples": 18009,
+  "step_s": 0.05,
+  "backup_margin_tolerance": 1e-08,
+  "other_margin_tolerance": 1e-08,
+  "scope": "sampled evidence; J is a sufficient instantaneous condition",
+  "contiguous_sampled_span": "last saved timestamp minus first timestamp, not event duration",
+  "python": "3.14.8",
+  "numpy": "2.5.4",
+  "scipy": "1.18.1",
+  "h5py": "3.16.0",
+  "validations": [
+    {
+      "case": "hold",
+      "method": "Proposed",
+      "samples": 1201,
+      "stored_rho": 0.1,
+      "evaluated_rho": 0.1,
+      "source_path": "inputs/reused_raw/Proposed_hold.mat",
+      "raw_sha256": "f529a7f79524f0d1fcaf46998bbd2f2ce4c820b8fcd0a701c4bfc17d9a396cd5",
+      "max_VB_ratio_reconstruction_difference": 7.632783294297951e-17,
+      "max_error_reconstruction_difference_m": 2.7755575615628914e-17
+    },
+    {
+      "case": "hold",
+      "method": "MatchedQP",
+      "samples": 1201,
+      "stored_rho": 0.1,
+      "evaluated_rho": 0.1,
+      "source_path": "inputs/reused_raw/MatchedQP_hold.mat",
+      "raw_sha256": "3d30cc6569f197e06c9003c7c4fbd0fdf1693f768559e5463b21f8982c9d2c32",
+      "max_VB_ratio_reconstruction_difference": 7.632783294297951e-17,
+      "max_error_reconstruction_difference_m": 2.7755575615628914e-17
+    },
+    {
+      "case": "varying",
+      "method": "Proposed",
+      "samples": 2401,
+      "stored_rho": 0.1,
+      "evaluated_rho": 0.1,
+      "source_path": "inputs/reused_raw/Proposed_varying.mat",
+      "raw_sha256": "a451b00b7e0d83ec3c2b6c3f1ed9409ea59adb7a68286cc67ce4e5c6872594c4",
+      "max_VB_ratio_reconstruction_difference": 5.551115123125783e-16,
+      "max_error_reconstruction_difference_m": 1.7763568394002505e-15
+    },
+    {
+      "case": "varying",
+      "method": "MatchedQP",
+      "samples": 2401,
+      "stored_rho": 0.1,
+      "evaluated_rho": 0.1,
+      "source_path": "inputs/reused_raw/MatchedQP_varying.mat",
+      "raw_sha256": "caba7b3d00a3013e2ad0f3d242c86651b969e004e11e250452ffe551e00243a9",
+      "max_VB_ratio_reconstruction_difference": 6.661338147750939e-16,
+      "max_error_reconstruction_difference_m": 1.7763568394002505e-15
+    },
+    {
+      "case": "varying",
+      "method": "Transparent",
+      "samples": 2401,
+      "stored_rho": 0.2,
+      "evaluated_rho": 0.1,
+      "source_path": "inputs/reused_raw/Transparent_varying.mat",
+      "raw_sha256": "8ea1e7eb50d719b5ba0f0c0227628d5d9306954d4542280d213a9e83c123562d",
+      "max_VB_ratio_reconstruction_difference": 1.0658141036401503e-14,
+      "max_error_reconstruction_difference_m": 4.440892098500626e-16
+    },
+    {
+      "case": "noisy",
+      "method": "Proposed",
+      "samples": 2401,
+      "stored_rho": 0.1,
+      "evaluated_rho": 0.1,
+      "source_path": "inputs/reused_raw/Proposed_noisy.mat",
+      "raw_sha256": "6afcdfd6c85c7f0ada6d4307e04dc246dfb46e0493211d1864419106f1f99ce6",
+      "max_VB_ratio_reconstruction_difference": 5.551115123125783e-16,
+      "max_error_reconstruction_difference_m": 1.7763568394002505e-15
+    },
+    {
+      "case": "noisy",
+      "method": "MatchedQP",
+      "samples": 2401,
+      "stored_rho": 0.1,
+      "evaluated_rho": 0.1,
+      "source_path": "inputs/reused_raw/MatchedQP_noisy.mat",
+      "raw_sha256": "479be2441939128a7a4547587abccb9bfc0c0f01d8c6366fa828125454dbf9ce",
+      "max_VB_ratio_reconstruction_difference": 5.551115123125783e-16,
+      "max_error_reconstruction_difference_m": 1.7763568394002505e-15
+    },
+    {
+      "case": "hold",
+      "method": "Transparent",
+      "samples": 1201,
+      "stored_rho": 0.1,
+      "evaluated_rho": 0.1,
+      "source_path": "runs/Transparent_hold.mat",
+      "raw_sha256": "26767700ca187a18f3a0ed7055c7e8d35d5a0b858c87caa14d4f8465716ed56a",
+      "max_VB_ratio_reconstruction_difference": 7.632783294297951e-17,
+      "max_error_reconstruction_difference_m": 2.7755575615628914e-17
+    },
+    {
+      "case": "noisy",
+      "method": "Transparent",
+      "samples": 2401,
+      "stored_rho": 0.1,
+      "evaluated_rho": 0.1,
+      "source_path": "runs/Transparent_noisy.mat",
+      "raw_sha256": "b83fa994a2f5a4c64991ba8d4f9b2d34169328a12ff96f96ceb9965f95d51e8a",
+      "max_VB_ratio_reconstruction_difference": 1.4210854715202004e-14,
+      "max_error_reconstruction_difference_m": 4.440892098500626e-16
+    }
+  ]
+}

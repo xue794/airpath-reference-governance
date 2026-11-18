@@ -1,0 +1,59 @@
+function Sync=test_final_parameter_sync_rev1()
+%TEST_FINAL_PARAMETER_SYNC_REV1 Exact canonical-parameter synchronization audit.
+
+M=final_parameter_manifest_rev1();
+C=cl6_params();
+
+fprintf('\nFinal Parameter Synchronization / Regression Freeze Rev.1\n');
+fprintf('=========================================================\n');
+
+resF=norm(C.F.KomegaF-M.F.KomegaF,'fro');
+resG=norm(C.G.Lambda-M.G.Lambda,'fro')+norm(C.G.Ks-M.G.Ks,'fro')+ ...
+     norm(C.G.Kc-M.G.Kc)+norm(C.G.eps-M.G.eps);
+resE=norm(C.E.Lw-M.E.Lw,'fro');
+resR=norm(C.R.Zeta-M.R.Zeta,'fro')+norm(C.R.Omega-M.R.Omega,'fro')+ ...
+     norm(C.R.nuMax-M.R.nuMax)+abs(C.R.Vmin-M.R.Vmin)+abs(C.R.Vmax-M.R.Vmax)+ ...
+     abs(C.R.gammaMax-M.R.gammaMax)+abs(C.R.alphaLo-M.R.alphaLo)+ ...
+     abs(C.R.alphaHi-M.R.alphaHi)+abs(C.R.Tmin-M.R.Tmin)+abs(C.R.Tmax-M.R.Tmax);
+resA=norm([C.A.kV-M.A.kV;C.A.kGamma-M.A.kGamma;C.A.kChi-M.A.kChi]);
+resB=abs(C.B.thetaFMax-M.B.thetaFMax)+abs(C.B.thetaRMax-M.B.thetaRMax)+ ...
+     abs(C.B.thetaTube-M.B.thetaTube)+abs(C.B.kappaMin-M.B.kappaMin);
+resD=abs(C.Dp.kR-M.Dp.kR)+norm(C.Dp.KomegaC-M.Dp.KomegaC,'fro');
+resP7=norm(C.P7.deltaMin-M.P7.deltaMin)+norm(C.P7.deltaMax-M.P7.deltaMax)+ ...
+      norm(C.P7.tauDelta-M.P7.tauDelta)+ ...
+      norm(C.P7.deltaRateMax-M.P7.deltaRateMax)+ ...
+      abs(C.P7.tauT-M.P7.tauT)+abs(C.P7.TRateMax-M.P7.TRateMax);
+
+MF=[M.F.cF*M.F.kRf, -0.5*M.F.cF*norm(M.F.KomegaF,2);
+    -0.5*M.F.cF*norm(M.F.KomegaF,2), ...
+    min(eig(M.F.KomegaF))-M.F.cF];
+
+spinPred=asin(M.F.KomegaF(3,3)*M.F.spinRate/M.F.kRf);
+
+fprintf('SYNC-P1 canonical VI-C final gain:\n');
+fprintf('   K_omega,f old -> final = 19.2 I -> %.1f I\n',M.F.KomegaF(1,1));
+fprintf('   full-loop/VI-C synchronization residual = %.3e\n',resF);
+fprintf('   eig(M_F,final) = [%.6f %.6f]\n',min(eig(MF)),max(eig(MF)));
+fprintf('   final pure-yaw exact steady lag = %.6f deg\n',rad2deg(spinPred));
+
+fprintf('SYNC-P2 unchanged-module synchronization residuals:\n');
+fprintf('   SMC / wind / RG / VI-A / VI-B / VI-D / actuator =\n');
+fprintf('   [%.3e %.3e %.3e %.3e %.3e %.3e %.3e]\n', ...
+    resG,resE,resR,resA,resB,resD,resP7);
+
+fprintf('SYNC-P3 interpretation lock:\n');
+fprintf('   theta_f split = %.3f deg, theta_R split = %.3f deg, total = %.3f deg\n', ...
+    rad2deg(M.B.thetaFMax),rad2deg(M.B.thetaRMax),rad2deg(M.B.thetaTube));
+fprintf('   legacy VI-D d_tau diagnostic level = %.4f N m (NOT global full-loop bound)\n', ...
+    M.dTauLegacyDiagnostic);
+
+assert(abs(M.F.kRf-256)<1e-14 && ...
+       norm(M.F.KomegaF-7*eye(3),'fro')<1e-14 && ...
+       abs(M.F.cF-0.5)<1e-14 && min(eig(MF))>0 && ...
+       resF<1e-14 && resG<1e-14 && resE<1e-14 && resR<1e-14 && ...
+       resA<1e-14 && resB<1e-14 && resD<1e-14 && resP7<1e-14, ...
+       'Final parameter synchronization failed.');
+
+Sync=struct('manifest',M,'MF',MF,'spinPrediction',spinPred, ...
+    'residuals',[resF resG resE resR resA resB resD resP7]);
+end

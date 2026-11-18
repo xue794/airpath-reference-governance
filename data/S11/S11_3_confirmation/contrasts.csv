@@ -1,0 +1,11 @@
+﻿case,name,coarse,fine,drift_gate,resolved,meets_scale,research_scale
+C1,O_minus_F_speed,1.2212464864919719,1.221246486614071,0.0005,True,True,0.606
+C1,F_minus_D_upper,0.0,0.0,5e-07,False,False,1.0
+C1,F_minus_A_upper,0.0,0.0,5e-07,False,False,1.0
+C1,N10_minus_Am_upper,0.0036271096649898027,0.0036271174506596893,5e-07,True,False,1.0
+C2,O_minus_F_speed,1.2221101907299943,1.2221102022091972,0.0005,True,True,0.606
+C2,F_minus_D_upper,0.0,0.0,5e-07,False,False,1.0
+C2,F_minus_A_upper,0.0,0.0,5e-07,False,False,1.0
+C3,O_minus_F_speed,1.1484396594587278,1.1484396623330855,0.0005,True,True,0.606
+C3,F_minus_D_upper,0.0,0.0,5e-07,False,False,1.0
+C3,F_minus_A_upper,0.0,0.0,5e-07,False,False,1.0

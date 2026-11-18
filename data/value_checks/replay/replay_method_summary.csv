@@ -1,0 +1,3 @@
+method,samples,eligible,interventions,backup_role_on_interventions,end_role_on_interventions,joint_included,joint_included_on_interventions,changed,end_viol,end_viol_alt_solver_tol,both,both_and_J,both_and_J_on_interventions,joint_event_segments,worst_scaled_change,worst_request_replay_scaled,worst_full_input_replay_scaled,worst_phi_replay_raw,worst_full_phi_violation_scaled,max_VB_over_rho,min_deleted_lower_endpoint_derivative_row_N_per_s,min_deleted_upper_endpoint_derivative_row_N_per_s
+Proposed,6003,6003,4720,4720,0,4579,3308,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,1.19272850050728e-16,1.00000000000029,193.793256163535,114.282929300882
+MatchedQP,6003,6003,4720,4720,0,4630,3359,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,2.978167371839e-16,1.00000000000018,194.54129101888,113.523222312063

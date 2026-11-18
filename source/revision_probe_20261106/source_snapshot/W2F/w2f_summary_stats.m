@@ -1,0 +1,9 @@
+function S = w2f_summary_stats(x)
+%W2F_SUMMARY_STATS Descriptive block statistics without toolbox functions.
+x=x(:);x=x(isfinite(x));
+assert(~isempty(x),'W2F:Stats','No finite timing observations.');
+S=struct('N',numel(x),'Mean',mean(x),'Median',median(x), ...
+    'Q05',w2f_percentile(x,.05),'Q25',w2f_percentile(x,.25), ...
+    'Q75',w2f_percentile(x,.75),'Q95',w2f_percentile(x,.95), ...
+    'Min',min(x),'Max',max(x));
+end

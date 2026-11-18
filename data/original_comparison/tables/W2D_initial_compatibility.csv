@@ -1,0 +1,7 @@
+Method,Mode,VB0_over_rhoB,CertificateCompatible
+Proposed,target_tmin,0,1
+MatchedQP,target_tmin,0,1
+Proposed,target_tmax,0,1
+MatchedQP,target_tmax,0,1
+Proposed,target_nplus,0,1
+MatchedQP,target_nplus,0,1

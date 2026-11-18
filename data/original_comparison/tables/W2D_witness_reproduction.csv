@@ -1,0 +1,4 @@
+Mode,ExpectedRowIndex,ExpectedRow,RawV,RawGamma_deg,RawChi_deg,VB_over_rho,ProposedLambda,ProposedObjective,QPObjective,ProposedExpectedLimiter,QPExpectedSupport,QPPath,MinAppliedPhiQP
+target_tmin,16,T_min,30,0,0,0,0.0855531832837622,6.85799170716593,6.27135644976679,1,1,single-halfspace,2.30926389122033e-14
+target_tmax,17,T_max,46,0,0,0,0.217992829608833,4.77073909245513,4.36264822927106,1,1,single-halfspace,1.4210854715202e-14
+target_nplus,15,N_plus,38.1,8,0,0,0.76462993621453,0.057437752589267,0.0572348158633797,1,1,single-halfspace,0

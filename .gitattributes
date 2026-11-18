@@ -1,0 +1,13 @@
+# Preserve the exact archived bytes on all platforms, including line endings.
+# The release SHA-256 manifest covers text as well as binary scientific inputs.
+* -text
+
+# Do not attempt textual diff/merge for these binary formats.
+*.mat binary
+*.gz binary
+*.zip binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.pdf binary
+*.docx binary

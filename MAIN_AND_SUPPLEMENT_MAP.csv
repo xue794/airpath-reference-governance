@@ -1,0 +1,44 @@
+﻿item,records_in_package,interpretation_and_verification_scope
+Main Figure 1,source/revision_probe_20261106/source_snapshot/core;data/original_comparison/tables/W3_PB_SI_coordinates.csv,Architecture schematic and analytic backup projection; equations and manuscript are authoritative.
+Main Figure 2,data/ordinary,Nine full saved-grid layered histories; ordinary metrics are recomputed by python/reproduce.py.
+Main Figure 3,data/original_comparison/tables/W2B_same_state.csv,Frozen common-state selector comparison; no new solver run.
+Main Figure 4,data/original_comparison/W3_figure_inputs.npz;data/original_comparison/tables/W2D_constraint_roles.csv,Saved target-pulse figure arrays and role summaries; NPZ reading requires NumPy. Not reconstructed by the standard-library summary entry.
+Main Figure 5,data/inversion_diagnostics,Saved reference-only and no-backup 6DOF diagnostic histories.
+Main Figure 6,data/original_comparison/tables/W2E_method_results.csv;data/original_comparison/tables/W2E_pair_results.csv,All 500 outcomes retained; common-completion RMS pairs independently recomputed.
+Main Figure 7,data/original_comparison/tables/W2E_method_results.csv;data/original_comparison/tables/W2E_pair_results.csv,All 500 outcomes retained; common-completion RMS pairs independently recomputed.
+Main Figure 8,data/original_comparison/tables/W2E_constraint_role_ledger.csv;data/original_comparison/tables/W2E_constraint_role_summary.csv,Row-role ledgers; scalar limiting and QP dual support have different definitions.
+Main Figure 9,data/S11/figure9;data/direct_traces,Fine-step C1 traces and C1/C2 O/F/Direct saved traces; selected metrics recomputed.
+Main Table 1,source/revision_probe_20261106/source_snapshot/core,"Definitions/guarantees/comparison identity; consult manuscript equations, not a data-derived numerical table."
+Main Table 2,source/revision_probe_20261106/source_snapshot/core,"Definitions/guarantees/comparison identity; consult manuscript equations, not a data-derived numerical table."
+Main Table 3,source/revision_probe_20261106/source_snapshot/core,"Definitions/guarantees/comparison identity; consult manuscript equations, not a data-derived numerical table."
+Main Table 4,source/revision_probe_20261106/source_snapshot/core,Frozen implementation parameters; study-defined actuator limits are not identified hardware specifications.
+Main Table 5,data/ordinary;data/local_transfer,"Final ordinary and conditional-transfer summaries; basic layered metrics recomputed, interval radii not regenerated."
+Main Table 6,data/original_comparison/tables/W2D_case_summary.csv;data/original_comparison/tables/W2D_constraint_roles.csv,Targeted tests and declared role counts; original saved records.
+Main Table 7,data/original_comparison/tables/W2E_method_results.csv;data/original_comparison/tables/W2E_pair_results.csv;data/original_comparison/tables/W3_common408_absolute_and_paired_metrics.csv,Completion outcomes and selected paired RMS statistics recomputed; other archived metrics supplied.
+Main Table 8,data/original_comparison/tables/W2E_method_results.csv;data/original_comparison/tables/W2E_pair_results.csv;data/original_comparison/tables/W3_common408_absolute_and_paired_metrics.csv,Completion outcomes and selected paired RMS statistics recomputed; other archived metrics supplied.
+Main Table 9,data/original_comparison/tables/W2F_timing_blocks.csv;data/value_checks/curve/timing_paired_blocks.csv,Timing block means; whole-governor medians and ratio-of-medians reduction recomputed.
+Main Table 10,data/endpoint_extension/a3,Two-step closed-loop gap contrasts; no new integration.
+Main Table 11,data/S11/S11_3_confirmation;data/S11/S11_5_direct_center;data/direct_traces,C1-C3 confirmation summaries; C1/C2 O/F/Direct speed contrasts recomputed from finer-step traces.
+Supplement Table S1,source/revision_probe_20261106/source_snapshot/core,Frozen GNA coefficients; manuscript and source definitions authoritative.
+Supplement Table S2,data/original_comparison/verification/backup_rho_0p10_certificate.json,Existing nominal whole-set certificate endpoints; not newly reproved.
+Supplement Table S3,data/value_checks/coverage,Saved-grid stress-trajectory coverage under backup candidates.
+Supplement Table S4,data/local_transfer;data/ordinary/summary_table.csv,Pointwise sufficient transfer radii and sampled coverage; radii are not invariant tracking bounds.
+Supplement Table S5,data/original_comparison/tables/W2E_sample_summary.csv;source/revision_probe_20261106/source_snapshot/W2E,Uncertainty specifications and frozen sample implementation/input snapshot.
+Supplement Table S6,source/revision_probe_20261106/source_snapshot/core,Auxiliary regression implementation retained; complete auxiliary output archive not in this lightweight release.
+Supplement Table S7,data/inversion_diagnostics,No-backup full-aircraft saved diagnostic trajectories; complete horizons distinguished from prefixes.
+Supplement Table S8,SOURCE_MANIFEST.json;SOURCE_WORKFLOWS.txt,This package maps the computational record categories; identity checks do not certify full all-stage reintegration portability.
+Supplement Table S9,data/value_checks/factorial,Ordinary varying-wind factorial summaries; no reintegration.
+Supplement Table S10,data/endpoint_extension/a3,Archived two-step contrasts and their numerical-resolution gates.
+Supplement Table S11,data/endpoint_extension/b1;data/endpoint_extension/b2,"Exact tested widths, counterexamples and verification summaries; full search trees not reconstructed."
+Supplement Table S12,data/endpoint_extension/b2,"Saved-point coverage counts, with different denominators per configuration group."
+Supplement Table S13,data/S11/S11_1_screening,Offline candidate screening summaries.
+Supplement Table S14,data/S11/S11_2_certificate,Saved interval endpoint and leaf records; no fresh interval-tree calculation.
+Supplement Table S15,data/S11/S11_3_development;data/S11/S11_3_confirmation,D0 and C1-C3 outcomes and timing windows.
+Supplement Table S16,data/S11/S11_3_development;data/S11/S11_3_confirmation,No-tube events and common-state row substitutions.
+Supplement Table S17,data/S11/S11_5_direct_center;data/direct_traces,Fine-step direct-center contrasts recomputed; archived two-step results supplied.
+Supplement Figure S1,data/original_comparison/tables/W3_PB_SI_coordinates.csv,Analytic ellipsoid projection.
+Supplement Figure S2,data/ordinary,Noisy-case saved-grid position errors.
+Supplement Figure S3,data/original_comparison/W3_figure_inputs.npz,Saved low-speed-pulse reference-thrust margin arrays; no new trajectory.
+Supplement Figure S4,data/original_comparison/tables/W2F_timing_blocks.csv,Twelve average per-call timing blocks.
+Supplement Figure S5,data/value_checks/curve;data/original_comparison/tables/W2E_method_results.csv,Full-ensemble tolerance curve and trial ledger; mission threshold not supplied.
+Supplement Figure S6,data/endpoint_extension/b1;data/endpoint_extension/b2,Saved interval-width grid and refinement endpoints; open search results remain open.

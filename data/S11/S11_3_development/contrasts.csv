@@ -1,0 +1,5 @@
+﻿name,coarse,fine,drift_gate,resolved,effect_scale,meets_scale
+O_F_speed,1.2137595932785876,1.213759590852106,0.0005,True,0.606,True
+F_D_margin,0.0,0.0,5e-07,False,1.0,False
+F_A_margin,0.0,0.0,5e-07,False,1.0,False
+N10_Am_margin,0.0019726348098796365,0.001972671264439896,5e-07,True,1.0,False

@@ -1,0 +1,6 @@
+{
+  "passed": true,
+  "numeric_comparisons": 1101,
+  "max_absolute_difference": 7.638334409421077e-13,
+  "scope": "Selected saved-output summaries only; no MATLAB reintegration or interval proof regenerated."
+}

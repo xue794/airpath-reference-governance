@@ -1,0 +1,11 @@
+# New verification output belongs outside the frozen input/source records.
+/generated/
+
+# Local interpreter and editor caches only.
+__pycache__/
+*.pyc
+*.pyo
+/.venv/
+/.vscode/
+.DS_Store
+Thumbs.db

@@ -1,0 +1,4 @@
+Mode,InitialStateInfDiff,QP_minus_Proposed_RMS_m,QP_minus_Proposed_Peak_m,QP_minus_Proposed_LatePeak_m,QP_minus_Proposed_Intervention_pp,RMSChangePct,PeakChangePct,MaxStateGridInfDiff,QPNonbackupPhysicalSupportSamples,QPThrustSupportSamples,QPTminSupportSamples,QPTmaxSupportSamples,QPNonbackupPhysicalActiveSetSamples,QPThrustActiveSetSamples,QPReferenceGatePass,QPKKTGatePass,ProposedReferenceGatePass
+hold,0,0,0,0,0,0,0,1.52766688188422e-13,0,0,0,0,0,0,1,1,1
+varying,0,0.630819212747323,-0.291549796738808,-0.453168510730864,0,8.11166645479013,-1.86030939232109,14.896057373437,0,0,0,0,0,0,1,1,1
+noisy,0,0.658559939625992,-0.220210170964418,-0.220210170964418,0,8.49703330355838,-1.41149910672658,15.2796599313032,0,0,0,0,0,0,1,1,1

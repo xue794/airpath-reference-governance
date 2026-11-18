@@ -1,0 +1,92 @@
+{
+  "trials": 17,
+  "total": 40817,
+  "eligible": 40817,
+  "exceptions": 0,
+  "status_counts": {
+    "no_detected_change": 40796,
+    "confirmed": 21
+  },
+  "exactly_equal": 40796,
+  "below_change_gate": 40796,
+  "confirmed": 21,
+  "new_outside_a1": 0,
+  "enumerated": 21,
+  "max_independent_kkt": [
+    4.907232715656487e-16,
+    4.907232715656487e-16
+  ],
+  "max_solver_comparison": 3.4638958368304884e-14,
+  "a3_ids": [
+    22,
+    32,
+    33
+  ],
+  "delta_is": "u16 minus u18",
+  "max_original_replay": {
+    "max_u0_replay": 0.0,
+    "max_u18_replay": 0.0,
+    "max_phi_replay": 0.0
+  },
+  "eligible_nonconfirmed_max_d": 0.0,
+  "initial": {
+    "points": 12,
+    "trial_ids": [
+      32,
+      33,
+      80,
+      91,
+      108,
+      113,
+      164,
+      184,
+      322,
+      386,
+      472,
+      483
+    ],
+    "backup_support": 0,
+    "J_included": 3,
+    "time_range": [
+      0.0,
+      0.0
+    ],
+    "lower_viol": 0,
+    "upper_viol": 12,
+    "d_range": [
+      0.013181205312213548,
+      0.4388896522301392
+    ],
+    "upper_phi_range": [
+      -53.485150985282786,
+      -1.6063234863465539
+    ]
+  },
+  "later": {
+    "points": 9,
+    "trial_ids": [
+      22,
+      86,
+      108,
+      236,
+      374,
+      397
+    ],
+    "backup_support": 7,
+    "J_included": 0,
+    "time_range": [
+      66.9,
+      107.7
+    ],
+    "lower_viol": 0,
+    "upper_viol": 9,
+    "d_range": [
+      0.056251685378603256,
+      0.2814397731362847
+    ],
+    "upper_phi_range": [
+      -31.60856394779927,
+      -2.759315291622002
+    ]
+  }
+}

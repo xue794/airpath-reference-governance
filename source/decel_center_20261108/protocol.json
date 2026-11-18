@@ -1,0 +1,59 @@
+{
+  "status": "Post hoc supplementary experiment after opening C1/C2; previously observed F and nominal center comparison.",
+  "cases": {
+    "C1": 31,
+    "C2": 31.5
+  },
+  "steps": [
+    0.01,
+    0.005
+  ],
+  "arm": "Direct analytic center (38.1 to 31.25 m/s, starts 3 s, 22 s quintic), level and straight; actual six-DOF closed loop.",
+  "inputs_to_controller": "Use exact center and analytic rates. Bypass governor and upstream command selection. Original guidance and observer evolve for diagnostics. Same saved F configuration, trim, physical model and downstream feedback.",
+  "environment": "Both calm, no measurement noise. Ground requests start at 3 s with 10 s ramp, horizon 35 s; sample interval .05 s.",
+  "events": "Downward first crossing of either original endpoint in reference or feedback terminates. Raw guidance speed and horizontal chart thresholds are passive logged events, as direct controller does not consume that command. For unequal lengths report common span only.",
+  "primary": "Actual horizontal groundspeed time-averaged absolute error [3,16]; compare Direct minus F. Descriptive reference-only counterpart and signed two-difference decomposition using historical O over same complete window.",
+  "companion": [
+    "35 s sampled 3D position RMS and peak",
+    "feedback upper and lower minima at 14–20 s and until stop with times",
+    "mean actual and governed ground speed at 25–35 s, signed target bias and C2-C1 response",
+    "E/G/J sampled coverage and actuators; distinguish full-domain proof and observed samples"
+  ],
+  "interpretation": "Same sign and difference >5*max(coarse/fine drift in either arm, floor), with floors 1e-4 m/s or 1e-7 N. Keep old research scales .606 m/s and 1 N. Position descriptive. No mission pass thresholds. Either direction and null outcomes retained.",
+  "hashes": {
+    "decel_confirm_20261108/protocol.json": "722a047d44483cc6c109cad65baf06fc4bd34e7bb97c314023fe1dfbeb4bcac1",
+    "decel_confirm_20261108/release_manifest.json": "cbadb436254b72011994861ceb8ea33bfdef81faca415f11c2284df0c2fb2d68",
+    "decel_region_20261108/results/decision.json": "3ef5ad4560bac718f5a48b2bd6473052eeadf3ae586b13e71e2e5e4cdbea77c4",
+    "decel_center_20261108/direct_reference.m": "324139a0d0e4d8a36edefdeae82f711df4d9bda1b9a9c0b424281b002c5a1f65",
+    "decel_center_20261108/direct_snapshot.m": "6be470d6b769efd3ac8e0e0683e81f26dedad9748d986d8d6968e45ca5241046",
+    "decel_center_20261108/run_direct.m": "8b8a8c242fc24aa1ade36887f00577c4e754dfa56a1fd2d89f9d4f9f7dbed119",
+    "decel_center_20261108/build_adapter.py": "09011516b9c30313b913af6a82a6a930f42b003fc5760757a19ef4215e205ac8",
+    "decel_center_20261108/run_study.py": "ced2a04abd04f21c66c5824892905bac1ba860ce2e6f0004604e7e7d0188ce94",
+    "decel_confirm_20261108/results/run_metrics.csv": "7fd1aa5f2d4b476d690e609fae9a1beae17ea8e382a0ca4f1e75fa9a0bf415f2",
+    "decel_confirm_20261108/runs/C1_F_005/F.mat": "d7a45c99d26ce3ec3290e96b32e13c7c95ea4e023cee5fcfbbfea7011f30d21b",
+    "decel_confirm_20261108/runs/C1_F_005/F_batch_summary.json": "4807302c1d90c5e909ef552985400583014af8af267e7ee20c78e995de701341",
+    "decel_confirm_20261108/runs/C1_F_005/F_samples.csv": "6cef5049b1607e364487407797d15c2456b42f64995fc6d9a3ddf7c31bf080e5",
+    "decel_confirm_20261108/runs/C1_F_005/F_summary.json": "4807302c1d90c5e909ef552985400583014af8af267e7ee20c78e995de701341",
+    "decel_confirm_20261108/runs/C1_F_005/replay.csv": "66ae2520637658d7ed9a5aab13a3b1583c12a16ba966a77ed2c3d8d0affa22b0",
+    "decel_confirm_20261108/runs/C1_F_010/F.mat": "b8971c088eed41091c930c9e7fffa4346c9fa12fa64f1152eff31f0ee1a09ee8",
+    "decel_confirm_20261108/runs/C1_F_010/F_batch_summary.json": "7cf68ee77d596ffe60a4be80da4eaafe270fa4d1d7a78f854aeea239eda9b64a",
+    "decel_confirm_20261108/runs/C1_F_010/F_samples.csv": "a52acfc4b0d54cf80a50caaaf11e88e1e87cacfe9aa8b3406521a5c40c6a0935",
+    "decel_confirm_20261108/runs/C1_F_010/F_summary.json": "7cf68ee77d596ffe60a4be80da4eaafe270fa4d1d7a78f854aeea239eda9b64a",
+    "decel_confirm_20261108/runs/C1_F_010/replay.csv": "43a53055e57db09de2b23fbc5fa88316acc0816bf957398f8d1078cc0e1805e6",
+    "decel_confirm_20261108/runs/C2_F_005/F.mat": "220daa6ff786e45afae745aa05d4b6b5428bc9ce5f7d0f33f5775d820a77b1db",
+    "decel_confirm_20261108/runs/C2_F_005/F_batch_summary.json": "35e1ab92448bf24f1867fad9b9d87ca61bd2d132159df3f5e3792f240efd55ad",
+    "decel_confirm_20261108/runs/C2_F_005/F_samples.csv": "deca2d7090f718751d99f3eb11372b02a38f44cd7c75dbb03065bf613c44d320",
+    "decel_confirm_20261108/runs/C2_F_005/F_summary.json": "35e1ab92448bf24f1867fad9b9d87ca61bd2d132159df3f5e3792f240efd55ad",
+    "decel_confirm_20261108/runs/C2_F_005/replay.csv": "f6dddb061014cc7eae41492ddd0cf5fc195ba9cd82b7b5f2beb6c8ee774c57b5",
+    "decel_confirm_20261108/runs/C2_F_010/F.mat": "91f22df3b99d099eed240fe297ae03b1014d2090f9afe63eee4cda597bca360d",
+    "decel_confirm_20261108/runs/C2_F_010/F_batch_summary.json": "2819a43c34b103fb5d1591e4211df2a7a6670113a5e823b6d49c41ac3c303201",
+    "decel_confirm_20261108/runs/C2_F_010/F_samples.csv": "fc7eb67c413a3d8b3e12c55c4efabe4395a9529d20d63368993ba5a29437b340",
+    "decel_confirm_20261108/runs/C2_F_010/F_summary.json": "2819a43c34b103fb5d1591e4211df2a7a6670113a5e823b6d49c41ac3c303201",
+    "decel_confirm_20261108/runs/C2_F_010/replay.csv": "fe5a219b412ddf6e84126b921596552e7a5453fe60774f4056e01f1200809448",
+    "decel_confirm_20261108/runs/C1_O_005/replay.csv": "505ea5be82a69fc80e1c72d8e4f80820ebde6ade6e3af78aa256c0e472252a2e",
+    "decel_confirm_20261108/runs/C1_O_010/replay.csv": "e66da832e4ea0bf0928b55010cefce3716394c3f9736da18f18a71214274c99e",
+    "decel_confirm_20261108/runs/C2_O_005/replay.csv": "fe5c24340c500646fce6d2ea105173323e3bc71763b5d741ed5db04e12547aa2",
+    "decel_confirm_20261108/runs/C2_O_010/replay.csv": "132c62b92e95e975d8c4c633eb11a48d4b82e158e8ee48a574c80514187ac5e3"
+  },
+  "registered_local": "2026-11-08T14:23:55.461756+08:00"
+}

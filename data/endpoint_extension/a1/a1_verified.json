@@ -1,0 +1,108 @@
+{
+  "phase": "A1",
+  "accepted": 17,
+  "grid_points": 40817,
+  "upper_support_samples": 21,
+  "role_rows": 306,
+  "source_files": 66,
+  "package_files": 39,
+  "rms_full_max_abs_diff_m": 0.0,
+  "rms_late_max_abs_diff_m": 0.0,
+  "min_event_time_s": 0.0,
+  "max_event_time_s": 107.7,
+  "event_time_counts": {
+    "0.0": 12,
+    "66.9": 1,
+    "68.85": 1,
+    "78.2": 1,
+    "80.4": 1,
+    "91.95": 1,
+    "95.55": 1,
+    "101.55": 1,
+    "105.0": 1,
+    "107.7": 1
+  },
+  "coactive_backup": 7,
+  "attitude_inside": 4,
+  "E_inside": 16,
+  "G_inside": 16,
+  "J_air_inside": 15,
+  "J_inside": 3,
+  "fb_root_bracket_observed": 21,
+  "raw_thrust_inside": 20,
+  "event_error_range_mps": [
+    0.12450862633372145,
+    2.4633558339109927
+  ],
+  "event_attitude_range_deg": [
+    0.21058348914375255,
+    1.822878733410093
+  ],
+  "event_fb_upper_range_N": [
+    94.22672116312668,
+    151.76412060877198
+  ],
+  "event_ref_upper_range_N": [
+    129.74006041669222,
+    153.29809634049633
+  ],
+  "max_abs_upper_phi_Nps": 3.694822225952521e-13,
+  "event_raw_thrust_range_N": [
+    -14.832069288632297,
+    25.55524699527119
+  ],
+  "python": "3.14.8",
+  "numpy": "2.5.4",
+  "scipy": "1.18.1",
+  "initial_events": {
+    "samples": 12,
+    "trial_ids": [
+      32,
+      33,
+      80,
+      91,
+      108,
+      113,
+      164,
+      184,
+      322,
+      386,
+      472,
+      483
+    ],
+    "time_s": [
+      0.0,
+      0.0
+    ],
+    "backup_support": 0,
+    "E_inside": 12,
+    "G_inside": 12,
+    "J_inside": 3,
+    "attitude_inside": 3
+  },
+  "later_events": {
+    "samples": 9,
+    "trial_ids": [
+      22,
+      86,
+      108,
+      236,
+      374,
+      397
+    ],
+    "time_s": [
+      66.9,
+      107.7
+    ],
+    "backup_support": 7,
+    "E_inside": 4,
+    "G_inside": 4,
+    "J_inside": 0,
+    "attitude_inside": 1
+  },
+  "J_exclusions": {
+    "air_only": 1,
+    "attitude_only": 12,
+    "both": 5
+  }
+}

@@ -1,0 +1,9 @@
+% START_W2E -- Paper 1 -> Aerospace W2-E paired 500-trial Monte Carlo
+% MATLAB R2018a. Keep the complete package together.
+packageRoot=fileparts(mfilename('fullpath'));
+cd(packageRoot);
+sourceRoot='C:\FWUAV\T2_GTM_GNA_FinalNumericalValidation_Rev4_1_1_MC_AdmissibleInit_Parallel';
+Report=run_p1_aerospace_w2e(sourceRoot, ...
+    'UseParallel',true, ...
+    'NumWorkers',56, ...
+    'Resume',true); %#ok<NASGU>
